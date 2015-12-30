@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+    <title>设计师库详情</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit"/>
+    <link href="../css/common.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/designer.css" rel="stylesheet" type="text/css"/>
+    <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="../js/common.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#tab1,#tab2").mouseenter(function () {
+                var cur = $(this);
+                $("#tab1,#tab2").removeClass("on");
+                cur.addClass("on");
+                if (cur.attr('id') == "tab1") {
+                    $("#div_tab1").addClass("on");
+                    $("#div_tab2").removeClass("on");
+                } else {
+                    $("#div_tab2").addClass("on");
+                    $("#div_tab1").removeClass("on");
+                }
+            });
+        })
+    </script>
+</head>
+<body>
+<!--头部上方样式, 可复制-->
+<div id="bar">
+    <div class="main clear">
+        <div class="fl bar_left">
+            nice网站是国内专注于房地产领域的战略规划和设计资源整合的平台。
+        </div>
+        <div class="fr clear">
+            <div class="bar_jykj f-size14 left">
+                交易空间
+            </div>
+            <div class="bar_login f-size14 left">
+                <a href="#">登录</a>
+            </div>
+            <div class="bar_reg f-size14 left">
+                <a href="#">注册</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--导航样式, 可复制-->
+<div id="header">
+    <div class="main clear">
+        <div class="header_left">
+        </div>
+        <div class="header_right f-size14 clear">
+            <div class="header_nav_common">
+                <div class="header_nav_common_son">
+                    <a href="#">首 页</a>
+                </div>
+            </div>
+            <div class="header_nav_common">
+                <div class="header_nav_common_son">
+                    <a href="#">Nice新闻</a>
+                </div>
+            </div>
+            <div class="header_nav_common on">
+                <div class="header_nav_common_son">
+                    <a href="#" class="on">设计师库</a>
+                </div>
+            </div>
+            <div class="header_nav_common">
+                <div class="header_nav_common_son">
+                    <a href="#">项目众创</a>
+                </div>
+            </div>
+            <div class="header_nav_common">
+                <div class="header_nav_common_son">
+                    <a href="#">Nice分享</a>
+                </div>
+            </div>
+            <div class="header_nav_common">
+                <div class="header_nav_common_son">
+                    <a href="#">关于我们</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main clear">
+    <div class="designer_bar">
+    </div>
+    <div class="designer_nav clear">
+        <span class="left_hy">设计师库</span><span class="left_hyyw">Designer</span><span class="ml30 f-size12">共有<span
+            class="f-color-h">112121</span>个设计师</span>
+
+        <div class="right">
+            <span class="cur_loc">当前位置</span><span class="ml5 mr5">></span><span>设计师库</span><span
+                class="ml5 mr5">></span><span class="left_hyyw">代表作品</span>
+        </div>
+    </div>
+    <div class="designer_detail_left">
+        <div class="ddltx">
+        <img width="198" height="198" src="../images/designer/tx01.jpg"/>
+            <div class="name"><div class="wb">张小文</div></div>
+        </div>
+
+        <div class="body">
+            <div class="hr"><img src="../images/designer/colimg.png">
+            </div>
+            <div class="linebox">
+                <div class="title">
+                    <div class="context f-color-hei">
+                        设计职称：
+                    </div>
+                    <div class="context">
+                        高级设计师
+
+                    </div>
+
+                </div>
+                <div class="title">
+                    <div class="context f-color-hei">
+                        居住地：
+                    </div>
+                    <div class="context">
+                        北京
+
+                    </div>
+
+                </div>
+                <div class="title">
+                    <div class="context f-color-hei">
+                        学历：
+                    </div>
+                    <div class="context">
+                        大学本科
+
+                    </div>
+
+                </div>
+                <div class="title">
+                    <div class="context f-color-hei">
+                        毕业院校：
+                    </div>
+                    <div class="context">
+                        清华大学美术学院
+                    </div>
+
+                </div>
+                <div class="title">
+                    <div class="context f-color-hei">
+                        毕业院校：
+                    </div>
+                    <div class="context">
+                        清华大学美术学院
+                    </div>
+
+                </div>
+                <div class="title">
+                    <div class="context f-color-hei">
+                        专业：
+                    </div>
+                    <div class="context">
+                        装潢设计专业
+                    </div>
+                </div>
+                <div class="title">
+                    <div class="context f-color-hei">
+                        工作年限：
+                    </div>
+                    <div class="context">
+                        8年
+                    </div>
+                </div>
+                <div class="title">
+                    <div class="context f-color-hei">
+                        擅长设计领域：
+                    </div>
+                    <div class="context">
+                        室内设计、景观设计、工业设计
+                    </div>
+                </div>
+                <div class="title">
+                    <div class="context f-color-hei">
+                        目前工作单位：
+                    </div>
+                    <div class="context">
+                        中国中化股份有限公司
+                    </div>
+
+                </div>
+                <div class="title">
+                    <div class="context f-color-hei">
+                        职位：
+                    </div>
+                    <div class="context">
+                        UI经理
+                    </div>
+                </div>
+                <div class="title">
+                    <div class="context f-color-hei">
+                        团队人数：
+                    </div>
+                    <div class="context">
+                        28人
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="designer_detail_cen">
+        <div class="title">
+            <span class="f-size18 f-color-hui">喜洋洋</span>
+            <span class="f-color-hui f-size14">/</span>
+            <span class="mr30">北京</span>关注度：89
+                <span class="fr">
+                    <input type="button" class="btngz"/>
+                    <!--<input type="button" class="btnsx" />-->
+                </span>
+        </div>
+
+        <div class="grjj">个人简介：</div>
+        <div class="context_zw clear">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;喜羊羊（Steve Leung），香港十大顶尖设计师之一，拥有香港大学建筑学学士，城市规划硕士多个显赫学历，积累了丰
+            经验。1997年创立了梁志天建筑师有限公司及梁志天设计有限公司。其设计独特之处，在于能够揉和建筑及室内设计两大学问
+            间的运用及美感营造相当敏锐。“进入屋内，我首先想到空间，而非颜色。颜色清淡不是问题，因为生气来自屋中的人。家，
+            的感觉是优悠和无拘无束。”因此，他的设计总是简单素净，却没有冷清的感觉，家居设计总是以实用为本，配合个人需要。
+        </div>
+        <div class="grjj">联系方式：</div>
+        <div class="context_zw clear">
+            <span class="f-color-h">　　您无权查看该设计师的联系方式</span>
+        </div>
+
+        <div class="my">
+            <div class="tab clear">
+                <div class="span on" id="tab1">代表作品</div>
+                <div class="span" id="tab2">我的Nice分享</div>
+            </div>
+            <div id="div_tab1" class="dbzp on">
+                <div class="conmain">
+
+                    <div class="creationbox">
+                        <div class="left mr20"><img src="../images/home/sss.png"/></div>
+
+                        <h1>瑞典斯德哥尔摩市皇家海港新城滨水区规划设计-- Elevated Ground
+                        </h1>
+
+                        <div class="leftbox">美国是当今世界农业现代化程度最高的国家，早在19世纪60年代，在一系列政策的指导下，
+                            美国农业就开始步入现代化进程。经过长期发展，现代农业成为美国最具竞争力的优势产业之一。美国现
+                            代农业的特点及发展经验，对于中国农业现代化建设有着重要启示。美国农业实行农场式的经营管理。美
+                            国地域辽阔，资源丰富，气候条件适宜，土地、草原和森林资源拥有量居世界前列，发展农业具有得天独
+                            厚的自然条件...
+                        </div>
+                        <!--<div class="fxtagbox">-->
+                            <!--<div class="fxtag01">87894</div>-->
+                            <!--<div class="fxtag02">782</div>-->
+                            <!--<div class="fxtag03">45</div>-->
+                            <!--<div class="fxtag04">2015-04-04</div>-->
+
+
+                        <!--</div>-->
+
+                    </div>
+                    <div class="creationbox">
+                        <div class="left mr20"><img src="../images/home/sss.png"/></div>
+
+                        <h1>瑞典斯德哥尔摩市皇家海港新城滨水区规划设计-- Elevated Ground
+                        </h1>
+
+                        <div class="leftbox">美国是当今世界农业现代化程度最高的国家，早在19世纪60年代，在一系列政策的指导下，
+                            美国农业就开始步入现代化进程。经过长期发展，现代农业成为美国最具竞争力的优势产业之一。美国现
+                            代农业的特点及发展经验，对于中国农业现代化建设有着重要启示。美国农业实行农场式的经营管理。美
+                            国地域辽阔，资源丰富，气候条件适宜，土地、草原和森林资源拥有量居世界前列，发展农业具有得天独
+                            厚的自然条件...
+                        </div>
+                        <!--<div class="fxtagbox">-->
+                            <!--<div class="fxtag01">87894</div>-->
+                            <!--<div class="fxtag02">782</div>-->
+                            <!--<div class="fxtag03">45</div>-->
+                            <!--<div class="fxtag04">2015-04-04</div>-->
+
+
+                        <!--</div>-->
+
+                    </div>
+                    <div class="creationbox">
+                        <div class="left mr20"><img src="../images/home/sss.png"/></div>
+
+                        <h1>瑞典斯德哥尔摩市皇家海港新城滨水区规划设计-- Elevated Ground
+                        </h1>
+
+                        <div class="leftbox">美国是当今世界农业现代化程度最高的国家，早在19世纪60年代，在一系列政策的指导下，
+                            美国农业就开始步入现代化进程。经过长期发展，现代农业成为美国最具竞争力的优势产业之一。美国现
+                            代农业的特点及发展经验，对于中国农业现代化建设有着重要启示。美国农业实行农场式的经营管理。美
+                            国地域辽阔，资源丰富，气候条件适宜，土地、草原和森林资源拥有量居世界前列，发展农业具有得天独
+                            厚的自然条件...
+                        </div>
+                        <!--<div class="fxtagbox">-->
+                            <!--<div class="fxtag01">87894</div>-->
+                            <!--<div class="fxtag02">782</div>-->
+                            <!--<div class="fxtag03">45</div>-->
+                            <!--<div class="fxtag04">2015-04-04</div>-->
+
+
+                        <!--</div>-->
+
+                    </div>
+                    <div class="creationbox">
+                        <div class="left mr20"><img src="../images/home/sss.png"/></div>
+
+                        <h1>瑞典斯德哥尔摩市皇家海港新城滨水区规划设计-- Elevated Ground
+                        </h1>
+
+                        <div class="leftbox">美国是当今世界农业现代化程度最高的国家，早在19世纪60年代，在一系列政策的指导下，
+                            美国农业就开始步入现代化进程。经过长期发展，现代农业成为美国最具竞争力的优势产业之一。美国现
+                            代农业的特点及发展经验，对于中国农业现代化建设有着重要启示。美国农业实行农场式的经营管理。美
+                            国地域辽阔，资源丰富，气候条件适宜，土地、草原和森林资源拥有量居世界前列，发展农业具有得天独
+                            厚的自然条件...
+                        </div>
+                        <!--<div class="fxtagbox">-->
+                            <!--<div class="fxtag01">87894</div>-->
+                            <!--<div class="fxtag02">782</div>-->
+                            <!--<div class="fxtag03">45</div>-->
+                            <!--<div class="fxtag04">2015-04-04</div>-->
+
+
+                        <!--</div>-->
+
+                    </div>
+                    <div class="creationbox">
+                        <div class="left mr20"><img src="../images/home/sss.png"/></div>
+
+                        <h1>瑞典斯德哥尔摩市皇家海港新城滨水区规划设计-- Elevated Ground
+                        </h1>
+
+                        <div class="leftbox">美国是当今世界农业现代化程度最高的国家，早在19世纪60年代，在一系列政策的指导下，
+                            美国农业就开始步入现代化进程。经过长期发展，现代农业成为美国最具竞争力的优势产业之一。美国现
+                            代农业的特点及发展经验，对于中国农业现代化建设有着重要启示。美国农业实行农场式的经营管理。美
+                            国地域辽阔，资源丰富，气候条件适宜，土地、草原和森林资源拥有量居世界前列，发展农业具有得天独
+                            厚的自然条件...
+                        </div>
+                        <!--<div class="fxtagbox">-->
+                            <!--<div class="fxtag01">87894</div>-->
+                            <!--<div class="fxtag02">782</div>-->
+                            <!--<div class="fxtag03">45</div>-->
+                            <!--<div class="fxtag04">2015-04-04</div>-->
+
+
+                        <!--</div>-->
+
+                    </div>
+
+
+                </div>
+                <!--<ul class="clear">-->
+                <!--<li class="zuo">-->
+                <!--<a href="dbzp_ddetail.htm" target="_blank"><img width="320" height="175" src="../images/designer/wdzp.jpg" /></a>-->
+                <!--<div class="title">-->
+                <!--<div class="t1"><a href="dbzp_ddetail.htm" target="_blank">2013ASLA规划设计类荣誉奖 &#45;&#45; Elevated Ground</a></div>-->
+                <!--<div class="icon">-->
+                <!--<span class=" ico sj"></span><span class="ml5">2015/5/5</span> <span class=" ico ck ml10">-->
+                <!--</span><span class="ml5">1455</span><span class="ico zs ml10"></span><span class="ml5">2244</span>-->
+                <!--</div>-->
+                <!--</div>-->
+
+                <!--</li>-->
+                <!--<li class="you">-->
+                <!--<a href="dbzp_ddetail.htm" target="_blank"><img width="320" height="175" src="../images/designer/wdzp.jpg" /></a>-->
+                <!--<div class="title">-->
+                <!--<div class="t1"><a href="dbzp_ddetail.htm" target="_blank">2013ASLA规划设计类荣誉奖 &#45;&#45; Elevated Ground</a></div>-->
+                <!--<div class="icon">-->
+                <!--<span class=" ico sj"></span><span class="ml5">2015/5/5</span> <span class=" ico ck ml10">-->
+                <!--</span><span class="ml5">1455</span><span class="ico zs ml10"></span><span class="ml5">2244</span>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</li>-->
+                <!--<li class="zuo">-->
+                <!--<a href="dbzp_ddetail.htm" target="_blank"><img width="320" height="175" src="../images/designer/wdzp.jpg" /></a>-->
+                <!--<div class="title">-->
+                <!--<div class="t1"><a href="dbzp_ddetail.htm" target="_blank">2013ASLA规划设计类荣誉奖 &#45;&#45; Elevated Ground</a></div>-->
+                <!--<div class="icon">-->
+                <!--<span class=" ico sj"></span><span class="ml5">2015/5/5</span> <span class=" ico ck ml10">-->
+                <!--</span><span class="ml5">1455</span><span class="ico zs ml10"></span><span class="ml5">2244</span>-->
+                <!--</div>-->
+                <!--</div>-->
+
+                <!--</li>-->
+                <!--<li class="you">-->
+                <!--<a href="dbzp_ddetail.htm" target="_blank"><img width="320" height="175" src="../images/designer/wdzp.jpg" /></a>-->
+                <!--<div class="title">-->
+                <!--<div class="t1"><a href="dbzp_ddetail.htm" target="_blank">2013ASLA规划设计类荣誉奖 &#45;&#45; Elevated Ground</a></div>-->
+                <!--<div class="icon">-->
+                <!--<span class=" ico sj"></span><span class="ml5">2015/5/5</span> <span class=" ico ck ml10">-->
+                <!--</span><span class="ml5">1455</span><span class="ico zs ml10"></span><span class="ml5">2244</span>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</li>-->
+                <!--<li class="zuo">-->
+                <!--<a href="dbzp_ddetail.htm" target="_blank"><img width="320" height="175" src="../images/designer/wdzp.jpg" /></a>-->
+                <!--<div class="title">-->
+                <!--<div class="t1"><a href="dbzp_ddetail.htm" target="_blank">2013ASLA规划设计类荣誉奖 &#45;&#45; Elevated Ground</a></div>-->
+                <!--<div class="icon">-->
+                <!--<span class=" ico sj"></span><span class="ml5">2015/5/5</span> <span class=" ico ck ml10">-->
+                <!--</span><span class="ml5">1455</span><span class="ico zs ml10"></span><span class="ml5">2244</span>-->
+                <!--</div>-->
+                <!--</div>-->
+
+                <!--</li>-->
+                <!--<li class="you">-->
+                <!--<a href="dbzp_ddetail.htm" target="_blank"><img width="320" height="175" src="../images/designer/wdzp.jpg" /></a>-->
+                <!--<div class="title">-->
+                <!--<div class="t1"><a href="dbzp_ddetail.htm" target="_blank">2013ASLA规划设计类荣誉奖 &#45;&#45; Elevated Ground</a></div>-->
+                <!--<div class="icon">-->
+                <!--<span class=" ico sj"></span><span class="ml5">2015/5/5</span> <span class=" ico ck ml10">-->
+                <!--</span><span class="ml5">1455</span><span class="ico zs ml10"></span><span class="ml5">2244</span>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</li>-->
+                <!--</ul>-->
+                <div class="clear"></div>
+
+                <div class="quotes">
+                    <span class="disabled">< </span>
+                    <span class="current">1</span>
+                    <a href="#?page=2">2</a>
+                    <a href="#?page=3">3</a>
+                    <a href="#?page=4">4</a>
+                    <a href="#?page=5">5</a>
+                    <a href="#?page=6">6</a>
+                    <a href="#?page=7">7</a>
+                    ...
+                    <a href="#?page=199">199</a>
+                    <a href="#?page=200">200</a>
+                    <a href="#?page=2"> > </a>
+                </div>
+            </div>
+            <div id="div_tab2" class="alyj">
+
+
+                <div class="conmain">
+
+                    <div class="sharebox">
+
+                        <h1>美国农业为何雄霸全球？看完你就懂了。</h1>
+
+                        <div class="leftbox"><span class="colortype01">【名师观点】</span>美国是当今世界农业现代化程度最高的国家，早在19世纪60年代，在一系列政策的指导下，
+                            美国农业就开始步入现代化进程。经过长期发展，现代农业成为美国最具竞争力的优势产业之一。美国现
+                            代农业的特点及发展经验，对于中国农业现代化建设有着重要启示。美国农业实行农场式的经营管理。美
+                            国地域辽阔，资源丰富，气候条件适宜，土地、草原和森林资源拥有量居世界前列，发展农业具有得天独
+                            厚的自然条件...
+                        </div>
+                        <div class="fxtagbox">
+                            <div class="fxtag01">87894</div>
+                            <div class="fxtag02">782</div>
+                            <div class="fxtag03">45</div>
+                            <div class="fxtag04">2015-04-04</div>
+
+
+                        </div>
+
+                    </div>
+                    <div class="sharebox">
+
+                        <h1>美国农业为何雄霸全球？看完你就懂了。</h1>
+
+                        <div class="leftbox"><span class="colortype02">【经典摘录】</span>美国是当今世界农业现代化程度最高的国家，早在19世纪60年代，在一系列政策的指导下，
+                            美国农业就开始步入现代化进程。经过长期发展，现代农业成为美国最具竞争力的优势产业之一。美国现
+                            代农业的特点及发展经验，对于中国农业现代化建设有着重要启示。美国农业实行农场式的经营管理。美
+                            国地域辽阔，资源丰富，气候条件适宜，土地、草原和森林资源拥有量居世界前列，发展农业具有得天独
+                            厚的自然条件...
+                        </div>
+                        <div class="fxtagbox">
+                            <div class="fxtag01">87894</div>
+                            <div class="fxtag02">782</div>
+                            <div class="fxtag03">45</div>
+                            <div class="fxtag04">2015-04-04</div>
+
+
+                        </div>
+
+                    </div>
+                    <div class="sharebox">
+
+                        <h1>美国农业为何雄霸全球？看完你就懂了。</h1>
+
+                        <div class="leftbox"><span class="colortype03">【项目经验】</span>美国是当今世界农业现代化程度最高的国家，早在19世纪60年代，在一系列政策的指导下，
+                            美国农业就开始步入现代化进程。经过长期发展，现代农业成为美国最具竞争力的优势产业之一。美国现
+                            代农业的特点及发展经验，对于中国农业现代化建设有着重要启示。美国农业实行农场式的经营管理。美
+                            国地域辽阔，资源丰富，气候条件适宜，土地、草原和森林资源拥有量居世界前列，发展农业具有得天独
+                            厚的自然条件...
+                        </div>
+                        <div class="fxtagbox">
+                            <div class="fxtag01">87894</div>
+                            <div class="fxtag02">782</div>
+                            <div class="fxtag03">45</div>
+                            <div class="fxtag04">2015-04-04</div>
+
+
+                        </div>
+
+                    </div>
+                    <div class="sharebox">
+
+                        <h1>美国农业为何雄霸全球？看完你就懂了。</h1>
+
+                        <div class="leftbox"><span class="colortype04">【专题案例】</span>美国是当今世界农业现代化程度最高的国家，早在19世纪60年代，在一系列政策的指导下，
+                            美国农业就开始步入现代化进程。经过长期发展，现代农业成为美国最具竞争力的优势产业之一。美国现
+                            代农业的特点及发展经验，对于中国农业现代化建设有着重要启示。美国农业实行农场式的经营管理。美
+                            国地域辽阔，资源丰富，气候条件适宜，土地、草原和森林资源拥有量居世界前列，发展农业具有得天独
+                            厚的自然条件...
+                        </div>
+                        <div class="fxtagbox">
+                            <div class="fxtag01">87894</div>
+                            <div class="fxtag02">782</div>
+                            <div class="fxtag03">45</div>
+                            <div class="fxtag04">2015-04-04</div>
+
+
+                        </div>
+
+                    </div>
+                    <div class="sharebox">
+
+                        <h1>美国农业为何雄霸全球？看完你就懂了。</h1>
+
+                        <div class="leftbox"><span class="colortype05">【八卦消息】</span>美国是当今世界农业现代化程度最高的国家，早在19世纪60年代，在一系列政策的指导下，
+                            美国农业就开始步入现代化进程。经过长期发展，现代农业成为美国最具竞争力的优势产业之一。美国现
+                            代农业的特点及发展经验，对于中国农业现代化建设有着重要启示。美国农业实行农场式的经营管理。美
+                            国地域辽阔，资源丰富，气候条件适宜，土地、草原和森林资源拥有量居世界前列，发展农业具有得天独
+                            厚的自然条件...
+                        </div>
+                        <div class="fxtagbox">
+                            <div class="fxtag01">87894</div>
+                            <div class="fxtag02">782</div>
+                            <div class="fxtag03">45</div>
+                            <div class="fxtag04">2015-04-04</div>
+
+
+                        </div>
+
+                    </div>
+                    <div class="clear"></div>
+
+                    <div class="quotes">
+                        <span class="disabled">< </span>
+                        <span class="current">1</span>
+                        <a href="#?page=2">2</a>
+                        <a href="#?page=3">3</a>
+                        <a href="#?page=4">4</a>
+                        <a href="#?page=5">5</a>
+                        <a href="#?page=6">6</a>
+                        <a href="#?page=7">7</a>
+                        ...
+                        <a href="#?page=199">199</a>
+                        <a href="#?page=200">200</a>
+                        <a href="#?page=2"> > </a>
+                    </div>
+
+                </div>
+                <!--<ul class="clear">-->
+                <!--<li>-->
+                <!--<div class="lileft"><a href="alyj_ddetail.htm" target="_blank"><img width="320" height="175" src="../images/designer/wdzp.jpg" /></a></div>-->
+                <!--<div class="liright">-->
+                <!--<div class="title"><a href="alyj_ddetail.htm" target="_blank">瑞典斯德哥尔摩市皇家海港新城滨水区规划设计 &#45;&#45; Elevated Ground</a></div>-->
+                <!--<div class="body">超适应性的有趣“植物球”公园-->
+                <!--景观 场所尺度 儿童游乐设施 独立公共基础设施 适应性设计 -->
+                <!--城市空间催化剂 互动 植物球 预制游乐设备 城市街头公园 -->
+                <!--美国 OP-AL</div><div class="icon" style=" margin-top:0px;">-->
+                <!--<span class=" ico sj"></span><span class="ml5">2015/5/5</span> <span class=" ico ck ml10">-->
+                <!--</span><span class="ml5">1455</span><span class="ico zs ml10"></span><span class="ml5">2244</span>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</li>-->
+                <!--<li>-->
+                <!--<div class="lileft"><a href="alyj_ddetail.htm" target="_blank"><img width="320" height="175" src="../images/designer/wdzp.jpg" /></a></div>-->
+                <!--<div class="liright">-->
+                <!--<div class="title"><a href="alyj_ddetail.htm" target="_blank">瑞典斯德哥尔摩市皇家海港新城滨水区规划设计 &#45;&#45; Elevated Ground</a></div>-->
+                <!--<div class="body">超适应性的有趣“植物球”公园-->
+                <!--景观 场所尺度 儿童游乐设施 独立公共基础设施 适应性设计 -->
+                <!--城市空间催化剂 互动 植物球 预制游乐设备 城市街头公园 -->
+                <!--美国 OP-AL</div><div class="icon" style=" margin-top:0px;">-->
+                <!--<span class=" ico sj"></span><span class="ml5">2015/5/5</span> <span class=" ico ck ml10">-->
+                <!--</span><span class="ml5">1455</span><span class="ico zs ml10"></span><span class="ml5">2244</span>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</li>-->
+                <!--<li>-->
+                <!--<div class="lileft"><a href="alyj_ddetail.htm" target="_blank"><img width="320" height="175" src="../images/designer/wdzp.jpg" /></a></div>-->
+                <!--<div class="liright">-->
+                <!--<div class="title"><a href="alyj_ddetail.htm" target="_blank">瑞典斯德哥尔摩市皇家海港新城滨水区规划设计 &#45;&#45; Elevated Ground</a></div>-->
+                <!--<div class="body">超适应性的有趣“植物球”公园-->
+                <!--景观 场所尺度 儿童游乐设施 独立公共基础设施 适应性设计 -->
+                <!--城市空间催化剂 互动 植物球 预制游乐设备 城市街头公园 -->
+                <!--美国 OP-AL</div><div class="icon" style=" margin-top:0px;">-->
+                <!--<span class=" ico sj"></span><span class="ml5">2015/5/5</span> <span class=" ico ck ml10">-->
+                <!--</span><span class="ml5">1455</span><span class="ico zs ml10"></span><span class="ml5">2244</span>-->
+                <!--</div>-->
+                <!--</div>-->
+                <!--</li>-->
+                <!--</ul>-->
+
+            </div>
+        </div>
+    </div>
+    <div class="designer_right">
+        <div class="title">
+            排行榜<span class="f-color-h ml5">TOP5</span></div>
+        <div class="hr">
+        </div>
+        <ul class="phb clear">
+            <li>
+                <div class="info1">
+                    <img height="50" width="50" src="../images/designer/r_tx.png" title="完整姓名"/></div>
+                <div class="info2">
+                    <div class="t1">
+                        <span class="fl f-size14">灰太狼</span> <span class="fr f-color-hui">关注度：89</span>
+                    </div>
+                    <div class="t2 f-color-hui">
+                        景观设计师 / 城市景观 景观设计师 / 城市景观 景观设计师 / 城市景观
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="info1">
+                    <img height="50" width="50" src="../images/designer/r_tx.png" title="完整姓名"/></div>
+                <div class="info2">
+                    <div class="t1">
+                        <span class="fl f-size14">灰太狼</span> <span class="fr f-color-hui">关注度：89</span>
+                    </div>
+                    <div class="t2 f-color-hui">
+                        景观设计师 / 城市景观
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="info1">
+                    <img height="50" width="50" src="../images/designer/r_tx.png" title="完整姓名"/></div>
+                <div class="info2">
+                    <div class="t1">
+                        <span class="fl f-size14">灰太狼</span> <span class="fr f-color-hui">关注度：89</span>
+                    </div>
+                    <div class="t2 f-color-hui">
+                        景观设计师 景观设计师 景观设计师 景观设计师 景观设计师 景观设计师 景观设计师 景观设计师 景观设计师 景观设计师
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="info1">
+                    <img height="50" width="50" src="../images/designer/r_tx.png" title="完整姓名"/></div>
+                <div class="info2">
+                    <div class="t1">
+                        <span class="fl f-size14">灰太狼</span> <span class="fr f-color-hui">关注度：89</span>
+                    </div>
+                    <div class="t2 f-color-hui">
+                        景观设计师 / 城市景观
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="info1">
+                    <img height="50" width="50" src="../images/designer/r_tx.png" title="完整姓名"/></div>
+                <div class="info2">
+                    <div class="t1">
+                        <span class="fl f-size14">灰太狼</span> <span class="fr f-color-hui">关注度：89</span>
+                    </div>
+                    <div class="t2 f-color-hui">
+                        景观设计师 / 城市景观
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <!--<div class="clear mt30">-->
+        <!--<div class="title fl">-->
+        <!--Nice分享</div>-->
+        <!--<a href="#">-->
+        <!--<div class="title_r fr">-->
+        <!--</div>-->
+        <!--</a>-->
+        <!--</div>-->
+        <!--<div class="hr">-->
+        <!--</div>-->
+        <!--<ul class="anli-box">-->
+        <!--<li class="mt10">-->
+        <!--<img width="266" height="175" src="../images/designer/tr.png">-->
+        <!--<div class="detail">-->
+        <!--<div class="text1">-->
+        <!--陈丹青 《设计与艺术》</div>-->
+        <!--<div class="text3">-->
+        <!--人生的意义在于行走和前进，他不断学习并提升自己，体味着生命的意义，除了在意大利多莫斯设计学院潜心学习理论知识在各类专业室内设计大赛中获得多项殊荣，……</div>-->
+        <!--</div>-->
+        <!--</li>-->
+        <!--<li class="mt10">-->
+        <!--<img width="266" height="175" src="../images/designer/tr.png">-->
+        <!--<div class="detail">-->
+        <!--<div class="text1">-->
+        <!--陈丹青 《设计与艺术》</div>-->
+        <!--<div class="text3">-->
+        <!--人生的意义在于行走和前进，他不断学习并提升自己，体味着生命的意义，除了在意大利多莫斯设计学院潜心学习理论知识在各类专业室内设计大赛中获得多项殊荣，……</div>-->
+        <!--</div>-->
+        <!--</li>-->
+        <!--<li class="mt10">-->
+        <!--<img width="266" height="175" src="../images/designer/tr.png">-->
+        <!--<div class="detail">-->
+        <!--<div class="text1">-->
+        <!--陈丹青 《设计与艺术》</div>-->
+        <!--<div class="text3">-->
+        <!--人生的意义在于行走和前进，他不断学习并提升自己，体味着生命的意义，除了在意大利多莫斯设计学院潜心学习理论知识在各类专业室内设计大赛中获得多项殊荣，……</div>-->
+        <!--</div>-->
+        <!--</li>-->
+        <!--</ul>-->
+        <div class="visitors mt30">
+            <div class="title">最近来访</div>
+            <div class="hr"></div>
+            <ul class="visitors_lists">
+
+                    <li>
+                        <div class="info1">
+                            <img height="50" width="50" src="../images/designer/r_tx.png" title="完整姓名"/></div>
+                        <div class="info2">
+                            <div class="t1">
+                                <div class="f-size14 name">灰太狼</div>
+                                <div class="f-size14">雇主</div>
+                                <div class="f-color-hui">1分钟</div>
+                            </div>
+
+                        </div>
+                    </li>
+                <li>
+                    <div class="info1">
+                        <img height="50" width="50" src="../images/designer/r_tx.png" title="完整姓名"/></div>
+                    <div class="info2">
+                        <div class="t1">
+                            <div class="f-size14 name">灰太狼</div>
+                            <div class="f-size14">雇主</div>
+                            <div class="f-color-hui">1分钟</div>
+                        </div>
+
+                    </div>
+                </li>
+                <li>
+                    <div class="info1">
+                        <img height="50" width="50" src="../images/designer/r_tx.png" title="完整姓名"/></div>
+                    <div class="info2">
+                        <div class="t1">
+                            <div class="f-size14 name">灰太狼</div>
+                            <div class="f-size14">雇主</div>
+                            <div class="f-color-hui">1分钟</div>
+                        </div>
+
+                    </div>
+                </li>
+                <li>
+                    <div class="info1">
+                        <img height="50" width="50" src="../images/designer/r_tx.png" title="完整姓名"/></div>
+                    <div class="info2">
+                        <div class="t1">
+                            <div class="f-size14 name">灰太狼</div>
+                            <div class="f-size14">设计师</div>
+                            <div class="f-color-hui">1分钟</div>
+                        </div>
+
+                    </div>
+                </li>
+                <li>
+                    <div class="info1">
+                        <img height="50" width="50" src="../images/designer/r_tx.png" title="完整姓名"/></div>
+                    <div class="info2">
+                        <div class="t1">
+                            <div class="f-size14 name">灰太狼</div>
+                            <div class="f-size14">设计师</div>
+                            <div class="f-color-hui">1分钟</div>
+                        </div>
+
+                    </div>
+                </li>
+                <li>
+                    <div class="info1">
+                        <img height="50" width="50" src="../images/designer/r_tx.png" title="完整姓名"/></div>
+                    <div class="info2">
+                        <div class="t1">
+                            <div class="f-size14 name">灰太狼</div>
+                            <div class="f-size14">设计师</div>
+                            <div class="f-color-hui">1分钟</div>
+                        </div>
+
+                    </div>
+                </li>
+                <li>
+                    <div class="info1">
+                        <img height="50" width="50" src="../images/designer/r_tx.png" title="完整姓名"/></div>
+                    <div class="info2">
+                        <div class="t1">
+                            <div class="f-size14 name">灰太狼</div>
+                            <div class="f-size14">雇主</div>
+                            <div class="f-color-hui">1分钟</div>
+                        </div>
+
+                    </div>
+                </li>
+                <li>
+                    <div class="info1">
+                        <img height="50" width="50" src="../images/designer/r_tx.png" title="完整姓名"/></div>
+                    <div class="info2">
+                        <div class="t1">
+                            <div class="f-size14 name">灰太狼</div>
+                            <div class="f-size14">雇主</div>
+                            <div class="f-color-hui">1分钟</div>
+                        </div>
+
+                    </div>
+                </li>
+                <li>
+                    <div class="info1">
+                        <img height="50" width="50" src="../images/designer/r_tx.png" title="完整姓名"/></div>
+                    <div class="info2">
+                        <div class="t1">
+                            <div class="f-size14 name">灰太狼</div>
+                            <div class="f-size14">雇主</div>
+                            <div class="f-color-hui">1分钟</div>
+                        </div>
+
+                    </div>
+                </li>
+                <li>
+                    <div class="info1">
+                        <img height="50" width="50" src="../images/designer/r_tx.png" title="完整姓名"/></div>
+                    <div class="info2">
+                        <div class="t1">
+                            <div class="f-size14 name">灰太狼</div>
+                            <div class="f-size14">雇主</div>
+                            <div class="f-color-hui">1分钟</div>
+                        </div>
+
+                    </div>
+                </li>
+
+
+
+
+
+            </ul>
+        </div>
+    </div>
+</div>
+<!--尾部样式, 可复制-->
+<!--尾部上方样式, 可复制-->
+<div class="footer">
+    <div class="conbox">
+        <div class="ftbox01"><img src="../images/footer/logo.png"/></div>
+        <div class="ftbox02"><img src="../images/footer/wenzi01.png"/>
+
+            <p class="hui01 f-size14 mt10">国内首个专注于房地产领域的战略规划和设计师资源整合平台</p>
+
+            <p class="hui02 f-size12 line01">版权声明：所有图片均受著作权保护，未经许可不得使用，不得转载、摘编。</p>
+
+            <p class="hui02 f-size12">版权所有 北京Nice网络科技有限公司 京ICP备10011865号-2 京公网安备11010502022735号</p>
+        </div>
+        <div class="ftbox03">
+            <p class="hui01 f-size24 lh40 fb">与我们合作</p>
+
+            <p class="hui01 f-size12">与Nice品牌合作，就会在一个以创意为重的国际环境下合作。</p>
+
+            <p class="hui01 f-size12">我们以客户至上，同时也相互挑战，以呈现最好的成果。</p>
+
+            <div class="telbox"><span class="title">咨询热线</span> <span class="shuzi">010-8568 6666</span></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

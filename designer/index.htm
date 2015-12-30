@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+    <title>设计师库</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit"/>
+    <link href="../css/common.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/designer.css" rel="stylesheet" type="text/css"/>
+    <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="../js/common.js" type="text/javascript"></script>
+</head>
+<body>
+<!--头部上方样式, 可复制-->
+<div id="bar">
+    <div class="main clear">
+        <div class="fl bar_left">
+            nice网站是国内专注于房地产领域的战略规划和设计资源整合的平台。
+        </div>
+        <div class="fr clear">
+            <div class="bar_jykj f-size14 left">
+                交易空间
+            </div>
+            <div class="bar_login f-size14 left">
+                <a href="#">登录</a>
+            </div>
+            <div class="bar_reg f-size14 left">
+                <a href="#">注册</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--导航样式, 可复制-->
+<div id="header">
+    <div class="main clear">
+        <div class="header_left">
+        </div>
+        <div class="header_right f-size14 clear">
+            <div class="header_nav_common">
+                <div class="header_nav_common_son">
+                    <a href="#">首 页</a>
+                </div>
+            </div>
+            <div class="header_nav_common">
+                <div class="header_nav_common_son">
+                    <a href="#">Nice新闻</a>
+                </div>
+            </div>
+            <div class="header_nav_common on">
+                <div class="header_nav_common_son">
+                    <a href="#" class="on">设计师库</a>
+                </div>
+            </div>
+            <div class="header_nav_common">
+                <div class="header_nav_common_son">
+                    <a href="#">项目众创</a>
+                </div>
+            </div>
+            <div class="header_nav_common">
+                <div class="header_nav_common_son">
+                    <a href="#">Nice分享</a>
+                </div>
+            </div>
+            <div class="header_nav_common">
+                <div class="header_nav_common_son">
+                    <a href="#">关于我们</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="main clear">
+    <div class="designer_bar">
+    </div>
+    <div class="designer_nav clear">
+        <span class="left_hy">设计师库</span><span class="left_hyyw">Designer</span><span class="ml30 f-size12">共有<span
+            class="f-color-h">112121</span>个设计师</span>
+
+        <div class="right">
+            <span class="cur_loc">当前位置</span><span class="ml5 mr5">></span><span class="left_hyyw">设计师库</span>
+        </div>
+    </div>
+    <div class="designer_left">
+        <div class="designer_search1 clear">
+            <input type="text" class="text" placeholder="昵称/姓名"/>
+
+            <div class="select_nn">
+                <input type="text" class="text ddl" value="省/地区" readonly/>
+                <input type="hidden"/>
+                <ul>
+                    <li><a href="javascript:;" rel="2">东城区</a></li>
+                    <li><a href="javascript:;" rel="3">西城区</a></li>
+                    <li><a href="javascript:;" rel="3">西城区</a></li>
+                    <li><a href="javascript:;" rel="3">西城区</a></li>
+                    <li><a href="javascript:;" rel="3">西城区</a></li>
+                    <li><a href="javascript:;" rel="3">西城区</a></li>
+                    <li><a href="javascript:;" rel="3">西城区</a></li>
+                    <li><a href="javascript:;" rel="3">西城区</a></li>
+                </ul>
+            </div>
+            <div class="select_nn">
+                <input type="text" class="text ddl" value="设计类型" readonly/>
+                <input type="hidden"/>
+                <ul>
+                    <li><a href="javascript:;" rel="2">设计类型</a></li>
+                    <li><a href="javascript:;" rel="2">总图规划</a></li>
+                    <li><a href="javascript:;" rel="3">建筑及配套专业设计</a></li>
+                    <li><a href="javascript:;" rel="2">室内设计</a></li>
+                    <li><a href="javascript:;" rel="2">景观设计</a></li>
+                    <li><a href="javascript:;" rel="2">雕塑设计</a></li>
+                    <li><a href="javascript:;" rel="2">导向标识设计</a></li>
+                    <li><a href="javascript:;" rel="2">灯光照明设计</a></li>
+                </ul>
+            </div>
+            <div class="select_nn">
+                <input type="text" class="text ddl" value="活跃度" readonly/>
+                <input type="hidden"/>
+                <ul>
+                    <li><a href="javascript:;" rel="2">活跃度</a></li>
+                    <li><a href="javascript:;" rel="2">发表文章</a></li>
+                    <li><a href="javascript:;" rel="3">完成项目</a></li>
+                </ul>
+            </div>
+            <div class="select_nn">
+                <input type="text" class="text ddl" value="团队实力" readonly/>
+                <input type="hidden"/>
+                <ul>
+                    <li><a href="javascript:;" rel="2">团队实力</a></li>
+                    <li><a href="javascript:;" rel="2">50人以上团队</a></li>
+                    <li><a href="javascript:;" rel="3">50人-30人团队</a></li>
+                    <li><a href="javascript:;" rel="3">30人-10人团队</a></li>
+                    <li><a href="javascript:;" rel="3">10人以下团队</a></li>
+                </ul>
+            </div>
+            <div class="select_nn">
+                <input type="text" class="text ddl" value="设计经验" readonly/>
+                <input type="hidden"/>
+                <ul>
+                    <li><a href="javascript:;" rel="2">设计经验</a></li>
+                    <li><a href="javascript:;" rel="2">20年经验</a></li>
+                    <li><a href="javascript:;" rel="3">10年经验</a></li>
+                    <li><a href="javascript:;" rel="3">5年经验</a></li>
+                    <li><a href="javascript:;" rel="3">2年经验</a></li>
+                </ul>
+            </div>
+            <input type="button" class="search_btn" value="搜索"/>
+        </div>
+        <div class="designer_search2 clear">
+            <a href="#4">
+                <div class="itemon">
+                    城市景观
+                </div>
+            </a><a href="#4">
+            <div class="item">
+                城市景观
+            </div>
+        </a><a href="#4">
+            <div class="item">
+                城市景观
+            </div>
+        </a><a href="#4">
+            <div class="item">
+                城市景观
+            </div>
+        </a><a href="#4">
+            <div class="item">
+                城市景观
+            </div>
+        </a><a href="#4">
+            <div class="item">
+                城市景观
+            </div>
+        </a>
+        </div>
+        <div class="conmain">
+
+            <div class="attentionbox">
+                <div class="leftbox">
+                    <div class="left w170"><img src="../images/center/userpic01.png"/></div>
+
+
+                    <div class="left w280">
+                        <h2 class="nickname">喜羊羊</h2>
+
+                        <p class="addre">北京 朝阳区 8年经验</p>
+
+                        <p>设计类型：景观设计师 城市景观</p>
+
+                        <p>关注度：89</p>
+                        <input type="button" class="guanz01">
+                    </div>
+
+                </div>
+                <div class="leftbox">
+                    <div class="left w170"><img src="../images/center/userpic01.png"/></div>
+
+
+                    <div class="left w280">
+                        <h2 class="nickname">喜羊羊</h2>
+
+                        <p class="addre">北京 朝阳区 8年经验</p>
+
+                        <p>设计类型：景观设计师 城市景观</p>
+
+                        <p>关注度：89</p>
+                        <input type="button" class="guanz01 guanz01on">
+                    </div>
+
+                </div>
+                <div class="leftbox">
+                    <div class="left w170"><img src="../images/center/userpic01.png"/></div>
+
+
+                    <div class="left w280">
+                        <h2 class="nickname">喜羊羊</h2>
+
+                        <p class="addre">北京 朝阳区 8年经验</p>
+
+                        <p>设计类型：景观设计师 城市景观</p>
+
+                        <p>关注度：89</p>
+                        <input type="button" class="guanz01">
+                    </div>
+
+                </div>
+                <div class="leftbox">
+                    <div class="left w170"><img src="../images/center/userpic01.png"/></div>
+
+
+                    <div class="left w280">
+                        <h2 class="nickname">喜羊羊</h2>
+
+                        <p class="addre">北京 朝阳区 8年经验</p>
+
+                        <p>设计类型：景观设计师 城市景观</p>
+
+                        <p>关注度：89</p>
+                        <input type="button" class="guanz01">
+                    </div>
+
+                </div>
+                <div class="leftbox">
+                    <div class="left w170"><img src="../images/center/userpic01.png"/></div>
+
+
+                    <div class="left w280">
+                        <h2 class="nickname">喜羊羊</h2>
+
+                        <p class="addre">北京 朝阳区 8年经验</p>
+
+                        <p>设计类型：景观设计师 城市景观</p>
+
+                        <p>关注度：89</p>
+                        <input type="button" class="guanz01">
+                    </div>
+
+                </div>
+                <div class="leftbox">
+                    <div class="left w170"><img src="../images/center/userpic01.png"/></div>
+
+
+                    <div class="left w280">
+                        <h2 class="nickname">喜羊羊</h2>
+
+                        <p class="addre">北京 朝阳区 8年经验</p>
+
+                        <p>设计类型：景观设计师 城市景观</p>
+
+                        <p>关注度：89</p>
+                        <input type="button" class="guanz01">
+                    </div>
+
+                </div>
+                <div class="leftbox">
+                    <div class="left w170"><img src="../images/center/userpic01.png"/></div>
+
+
+                    <div class="left w280">
+                        <h2 class="nickname">喜羊羊</h2>
+
+                        <p class="addre">北京 朝阳区 8年经验</p>
+
+                        <p>设计类型：景观设计师 城市景观</p>
+
+                        <p>关注度：89</p>
+                        <input type="button" class="guanz01">
+                    </div>
+
+                </div>
+                <div class="leftbox">
+                    <div class="left w170"><img src="../images/center/userpic01.png"/></div>
+
+
+                    <div class="left w280">
+                        <h2 class="nickname">喜羊羊</h2>
+
+                        <p class="addre">北京 朝阳区 8年经验</p>
+
+                        <p>设计类型：景观设计师 城市景观</p>
+
+                        <p>关注度：89</p>
+                        <input type="button" class="guanz01">
+                    </div>
+
+                </div>
+                <div class="leftbox">
+                    <div class="left w170"><img src="../images/center/userpic01.png"/></div>
+
+
+                    <div class="left w280">
+                        <h2 class="nickname">喜羊羊</h2>
+
+                        <p class="addre">北京 朝阳区 8年经验</p>
+
+                        <p>设计类型：景观设计师 城市景观</p>
+
+                        <p>关注度：89</p>
+                        <input type="button" class="guanz01">
+                    </div>
+
+                </div>
+                <div class="leftbox">
+                    <div class="left w170"><img src="../images/center/userpic01.png"/></div>
+
+
+                    <div class="left w280">
+                        <h2 class="nickname">喜羊羊</h2>
+
+                        <p class="addre">北京 朝阳区 8年经验</p>
+
+                        <p>设计类型：景观设计师 城市景观</p>
+
+                        <p>关注度：89</p>
+                        <input type="button" class="guanz01">
+                    </div>
+
+                </div>
+                <div class="leftbox">
+                    <div class="left w170"><img src="../images/center/userpic01.png"/></div>
+
+
+                    <div class="left w280">
+                        <h2 class="nickname">喜羊羊</h2>
+
+                        <p class="addre">北京 朝阳区 8年经验</p>
+
+                        <p>设计类型：景观设计师 城市景观</p>
+
+                        <p>关注度：89</p>
+                        <input type="button" class="guanz01">
+                    </div>
+
+                </div>
+                <div class="leftbox">
+                    <div class="left w170"><img src="../images/center/userpic01.png"/></div>
+
+
+                    <div class="left w280">
+                        <h2 class="nickname">喜羊羊</h2>
+
+                        <p class="addre">北京 朝阳区 8年经验</p>
+
+                        <p>设计类型：景观设计师 城市景观</p>
+
+                        <p>关注度：89</p>
+                        <input type="button" class="guanz01">
+                    </div>
+
+                </div>
+
+
+            </div>
+
+            <div class="clear"></div>
+
+            <div class="quotes">
+                <span class="disabled">< </span>
+                <span class="current">1</span>
+                <a href="#?page=2">2</a>
+                <a href="#?page=3">3</a>
+                <a href="#?page=4">4</a>
+                <a href="#?page=5">5</a>
+                <a href="#?page=6">6</a>
+                <a href="#?page=7">7</a>
+                ...
+                <a href="#?page=199">199</a>
+                <a href="#?page=200">200</a>
+                <a href="#?page=2"> > </a>
+            </div>
+        </div>
+
+    </div>
+    <div class="designer_right">
+        <div class="title">
+            排行榜<span class="f-color-h ml5">TOP5</span></div>
+        <div class="hr">
+        </div>
+        <ul class="phb clear">
+            <li>
+                <div class="info1">
+                    <img height="50" width="50" src="../images/designer/r_tx.png"/></div>
+                <div class="info2">
+                    <div class="t1">
+                        <span class="fl f-size14">灰太狼</span> <span class="fr f-color-hui">关注度：89</span>
+                    </div>
+                    <div class="t2 f-color-hui">
+                        景观设计师 / 城市景观
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="info1">
+                    <img height="50" width="50" src="../images/designer/r_tx.png"/></div>
+                <div class="info2">
+                    <div class="t1">
+                        <span class="fl f-size14">灰太狼</span> <span class="fr f-color-hui">关注度：89</span>
+                    </div>
+                    <div class="t2 f-color-hui">
+                        景观设计师 / 城市景观
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="info1">
+                    <img height="50" width="50" src="../images/designer/r_tx.png"/></div>
+                <div class="info2">
+                    <div class="t1">
+                        <span class="fl f-size14">灰太狼</span> <span class="fr f-color-hui">关注度：89</span>
+                    </div>
+                    <div class="t2 f-color-hui">
+                        景观设计师 / 城市景观
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="info1">
+                    <img height="50" width="50" src="../images/designer/r_tx.png"/></div>
+                <div class="info2">
+                    <div class="t1">
+                        <span class="fl f-size14">灰太狼</span> <span class="fr f-color-hui">关注度：89</span>
+                    </div>
+                    <div class="t2 f-color-hui">
+                        景观设计师 / 城市景观
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="info1">
+                    <img height="50" width="50" src="../images/designer/r_tx.png"/></div>
+                <div class="info2">
+                    <div class="t1">
+                        <span class="fl f-size14">灰太狼</span> <span class="fr f-color-hui">关注度：89</span>
+                    </div>
+                    <div class="t2 f-color-hui">
+                        景观设计师 / 城市景观
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <!--<div class="clear mt30">-->
+            <!--<div class="title fl">-->
+                <!--Nice分享-->
+            <!--</div>-->
+            <!--<a href="#">-->
+                <!--<div class="title_r fr">-->
+                <!--</div>-->
+            <!--</a>-->
+        <!--</div>-->
+        <!--<div class="hr">-->
+        <!--</div>-->
+        <!-- <img class="mt10" width="266" height="175" src="../images/designer/tr.png" />
+        <img class="mt10" width="266" height="175" src="../images/designer/tr.png" />
+        <img class="mt10" width="266" height="175" src="../images/designer/tr.png" />
+        <img class="mt10" width="266" height="175" src="../images/designer/tr.png" /> -->
+        <!--<ul class="anli-box">-->
+            <!--<li class="mt10">-->
+                <!--<img width="266" height="175" src="../images/designer/tr.png">-->
+
+                <!--<div class="detail">-->
+                    <!--<div class="text1">陈丹青 《设计与艺术》</div>-->
+                    <!--<div class="text3">人生的意义在于行走和前进，他不断学习并提升自己，体味着生命的意义，除了在意大利多莫斯设计学院潜心学习理论知识在各类专业室内设计大赛中获得多项殊荣，……</div>-->
+                <!--</div>-->
+            <!--</li>-->
+            <!--<li class="mt10">-->
+                <!--<img width="266" height="175" src="../images/designer/tr.png">-->
+
+                <!--<div class="detail">-->
+                    <!--<div class="text1">陈丹青 《设计与艺术》</div>-->
+                    <!--<div class="text3">人生的意义在于行走和前进，他不断学习并提升自己，体味着生命的意义，除了在意大利多莫斯设计学院潜心学习理论知识在各类专业室内设计大赛中获得多项殊荣，……</div>-->
+                <!--</div>-->
+            <!--</li>-->
+            <!--<li class="mt10">-->
+                <!--<img width="266" height="175" src="../images/designer/tr.png">-->
+
+                <!--<div class="detail">-->
+                    <!--<div class="text1">陈丹青 《设计与艺术》</div>-->
+                    <!--<div class="text3">人生的意义在于行走和前进，他不断学习并提升自己，体味着生命的意义，除了在意大利多莫斯设计学院潜心学习理论知识在各类专业室内设计大赛中获得多项殊荣，……</div>-->
+                <!--</div>-->
+            <!--</li>-->
+            <!--<li class="mt10">-->
+                <!--<img width="266" height="175" src="../images/designer/tr.png">-->
+
+                <!--<div class="detail">-->
+                    <!--<div class="text1">陈丹青 《设计与艺术》</div>-->
+                    <!--<div class="text3">人生的意义在于行走和前进，他不断学习并提升自己，体味着生命的意义，除了在意大利多莫斯设计学院潜心学习理论知识在各类专业室内设计大赛中获得多项殊荣，……</div>-->
+                <!--</div>-->
+            <!--</li>-->
+        <!--</ul>-->
+        <div class="good_case mt30">
+            <div class="title">优秀分享</div>
+            <div class="hr"></div>
+            <ul class="good_case_lists">
+                <li><a href="#">生态农业观光旅游新三板上市指南。<span class="time">2015/04/12</span></a></li>
+                <li><a href="#">产业地产商看过来：你看不上的蚊子肉早被人下手了。<span class="time">2015/04/12</span></a></li>
+                <li><a href="#">产业地产商看过来：你看不上的蚊子肉早被人下手了。<span class="time">2015/04/12</span></a></li>
+                <li><a href="#">产业地产商看过来：你看不上的蚊子肉早被人下手了。<span class="time">2015/04/12</span></a></li>
+                <li><a href="#">产业地产商看过来：你看不上的蚊子肉早被人下手了。<span class="time">2015/04/12</span></a></li>
+                <li><a href="#">产业地产商看过来：你看不上的蚊子肉早被人下手了。<span class="time">2015/04/12</span></a></li>
+                <li><a href="#">产业地产商看过来：你看不上的蚊子肉早被人下手了。<span class="time">2015/04/12</span></a></li>
+                <li><a href="#">产业地产商看过来：你看不上的蚊子肉早被人下手了。<span class="time">2015/04/12</span></a></li>
+                <li><a href="#">产业地产商看过来：你看不上的蚊子肉早被人下手了。<span class="time">2015/04/12</span></a></li>
+                <li><a href="#">产业地产商看过来：你看不上的蚊子肉早被人下手了。<span class="time">2015/04/12</span></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!--尾部样式, 可复制-->
+<!--尾部上方样式, 可复制-->
+<div class="footer">
+    <div class="conbox">
+        <div class="ftbox01"><img src="../images/footer/logo.png"/></div>
+        <div class="ftbox02"><img src="../images/footer/wenzi01.png"/>
+
+            <p class="hui01 f-size14 mt10">国内首个专注于房地产领域的战略规划和设计师资源整合平台</p>
+
+            <p class="hui02 f-size12 line01">版权声明：所有图片均受著作权保护，未经许可不得使用，不得转载、摘编。</p>
+
+            <p class="hui02 f-size12">版权所有 北京Nice网络科技有限公司 京ICP备10011865号-2 京公网安备11010502022735号</p>
+        </div>
+        <div class="ftbox03">
+            <p class="hui01 f-size24 lh40 fb">与我们合作</p>
+
+            <p class="hui01 f-size12">与Nice品牌合作，就会在一个以创意为重的国际环境下合作。</p>
+
+            <p class="hui01 f-size12">我们以客户至上，同时也相互挑战，以呈现最好的成果。</p>
+
+            <div class="telbox"><span class="title">咨询热线</span> <span class="shuzi">010-8568 6666</span></div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

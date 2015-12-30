@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+    <title>首页</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit"/>
+    <link href="../css/common.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/home.css" rel="stylesheet" type="text/css"/>
+    <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="../js/common.js" type="text/javascript"></script>
+    <script src="../js/home.js" type="text/javascript"></script>
+    <script src="../js/center.js" type="text/javascript"></script>
+    <script>
+        $(function () {
+            $("input:text,input:password,textarea").focus(function () {
+                $(this).addClass("on");
+            }).blur(function () {
+                $(this).removeClass("on");
+                check($(this));
+            });
+
+
+        });
+        </script>
+</head>
+<body>
+<!--头部上方样式, 可复制-->
+<div id="bar">
+    <div class="main clear">
+        <div class="fl bar_left">
+            nice网站是国内专注于房地产领域的战略规划和设计资源整合的平台。
+        </div>
+        <div class="fr clear">
+            <div class="bar_jykj f-size14 left">
+                交易空间
+            </div>
+            <div class="bar_login f-size14 left">
+                <a href="#">登录</a></div>
+            <div class="bar_reg f-size14 left">
+                <a href="#">注册</a></div>
+        </div>
+    </div>
+</div>
+<!--导航样式, 可复制;-->
+<div id="header">
+    <div class="main clear">
+        <div class="header_left">
+        </div>
+
+    </div>
+</div>
+<div class="container-fullg clear">
+    <div class="pcentermain clear">
+        <div class="pcenter-left02">
+            <div class="menu subNavBox">
+                <div><img src="../images/center/title.png"/></div>
+
+
+
+                <div class="subNav currentDd currentDt"><a href="info.htm">个人资料</a></div>
+                <ul class="navContent"></ul>
+
+                <div class="subNav "><a href="edit.htm">修改个人资料</a></div>
+                <ul class="navContent"></ul>
+
+
+            </div>
+            <div class="sjbuttonbox">
+                <input type="button" class="sjgz" value="升级到雇主"  onclick="location.href='guzhush.htm'"/>
+                <input type="button" class="sjgz" value="升级到设计师" onclick="location.href='shziliao.htm'" />
+            </div>
+
+
+        </div>
+
+        <div class="pcenter-right">
+            <div class="rightbox">
+                <div class="contitle">注册雇主</div>
+
+
+
+
+
+
+                <div class="conmain">
+
+                    <div class="reg_left">
+
+                        <div class="line clear">
+                            <div class="info1"><span class="f-color-r">*</span>真实姓名：</div>
+                            <div class="info2">
+                                <input type="text" class="text" placeholder="真实姓名" id="namegz"/>
+                            </div>
+                            <div class="info3">
+                                <div class="ok"></div>
+                                <div class="cuowu">输入错误</div>
+                            </div>
+                        </div>
+                        <div class="line clear">
+                            <div class="info1"><span class="f-color-r">*</span>公司名称/昵称：</div>
+                            <div class="info2">
+                                <input type="text" class="text" placeholder="公司名称/昵称" id="namegs"/>
+                            </div>
+                            <div class="info3">
+                                <div class="ok"></div>
+                                <div class="cuowu">输入错误</div>
+                            </div>
+                        </div>
+
+                        <div class="line clear">
+                            <div class="info1"><span class="f-color-r">*</span>手机号码：</div>
+                            <div class="info2">
+                                <input type="text" class="text" placeholder="手机号码" id="telnumber"/>
+                            </div>
+                            <div class="info3">
+                                <div class="ok"></div>
+                                <div class="cuowu">输入错误</div>
+                            </div>
+                        </div>
+                        <div class="line clear">
+                            <div class="info1">邮箱：</div>
+                            <div class="info2">
+                                <input type="text" class="text" placeholder="邮箱" id="email"/>
+                            </div>
+                            <div class="info3">
+                                <div class="ok"></div>
+                                <div class="cuowu">输入错误</div>
+                            </div>
+                        </div>
+
+
+
+
+                        <div class="xuzhi">
+                            <input type="checkbox" /> <label class="f-size12">阅读并接受<a href="###"> 《Nice设计网用户须知》</a></label>
+                        </div>
+
+                    </div>
+
+
+
+
+
+                    <div class="conrightbox"><span class="left w220"><img src="../images/center/userpic.png"/> </span>
+
+                        <div class="left w240">
+                            <div class="h25"></div>
+                            <button type="button" class="button01">从电脑中选择</button>
+                            <p class="lh20 mt20">
+                                请上传您的品牌Logo或者个人真实头像<br/>
+                                请勿在形象标示上留有任何联系方式的信息<br/>
+                                会导致您的头像无法通过审核<br/>
+                                支持<span class="f-color-h">JPG、PNG</span>格式，图片大小不超过5MB</p></div>
+
+
+                    </div>
+
+                    <div class="clear"></div>
+                   
+                    <input type="button" class="button02" value="提交审核" onclick="location.href='info02.htm'" />
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!--尾部上方样式, 可复制-->
+    <div class="footer">
+        <div class="conbox">
+            <div class="ftbox01"><img src="../images/footer/logo.png"/></div>
+            <div class="ftbox02"><img src="../images/footer/wenzi01.png"/>
+
+                <p class="hui01 f-size14 mt10">国内首个专注于房地产领域的战略规划和设计师资源整合平台</p>
+
+                <p class="hui02 f-size12 line01">版权声明：所有图片均受著作权保护，未经许可不得使用，不得转载、摘编。</p>
+
+                <p class="hui02 f-size12">版权所有 北京Nice网络科技有限公司 京ICP备10011865号-2 京公网安备11010502022735号</p>
+            </div>
+            <div class="ftbox03">
+                <p class="hui01 f-size24 lh40 fb">与我们合作</p>
+
+                <p class="hui01 f-size12">与Nice品牌合作，就会在一个以创意为重的国际环境下合作。</p>
+
+                <p class="hui01 f-size12">我们以客户至上，同时也相互挑战，以呈现最好的成果。</p>
+
+                <div class="telbox"><span class="title">咨询热线</span> <span class="shuzi">010-8568 6666</span></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+
+    function test_item(n){
+        var menu = document.getElementById("N_tab");
+        var menuli = menu.getElementsByTagName("li");
+        for(var i = 0; i< menuli.length;i++){
+            menuli[i].className= "";
+            document.getElementById("I_tab"+ i).className = "no";
+            document.getElementById("I_tab"+ n).className = "content";
+        }
+        menuli[n].className="yes";
+    }
+</script>
+</body>
+</html>

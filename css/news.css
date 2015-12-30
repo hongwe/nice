@@ -1,0 +1,86 @@
+﻿.news_bar{ background:url(../images/news/newsbar.jpg) no-repeat; width:1240px; height:190px;}
+.news_nav{ height:40px; line-height:40px; margin-top:2px; border-bottom:1px solid #f0efed; font-size:14px;}
+.news_nav .left_hy{  height:26px; line-height:26px; display:inline-block; text-align:center; width:78px; background-color:#f7f7f6; color:#666666; margin-right:8px;}
+.news_nav .left_hyyw{ color:#ff4a00;}
+.news_nav .right{ float:right; margin-right:20px; font-size:12px; }
+.news_nav .right .cur_loc{height:26px; line-height:26px; display:inline-block; text-align:right; width:78px;background:url(../images/common/home.png) no-repeat 0px 6px; }
+
+.news_body{ margin-top:30px;}
+.news_body .news_body_left{border:1px solid #e8e8e8; padding:10px; float:left; width:176px; height:401px; position:relative;}
+.news_body .news_body_left .left_huandeng{  position:absolute; width:176px; height:375px; display:none;}
+.news_body .news_body_left .left_huandeng .img{ width:176px; height:270px; display:block;}
+.news_body .news_body_left .left_huandeng .title{ height:40px; line-height:50px; overflow:hidden; width:176px; font-weight:bold; color:#333333;}
+.news_body .news_body_left .left_huandeng .title .span{ width:30px; height:16px; line-height:16px; float:left; margin-top:16px; text-align:center; margin-right:5px; color:#ffffff; background-color:#ff4a00; display:inline-block;}
+.news_body .news_body_left .left_huandeng .context{ overflow:hidden; width:176px; height:70px; line-height:25px; color:#333333;}
+.news_body .news_body_left  .spans{ width:176px; position:absolute; z-index:2511; top:390px; height:10px; text-align:right;}
+.news_body .news_body_left  .spans .span{ cursor:pointer; width:9px; height:9px;background:url(../images/common/huan_h.png); margin-left:8px; display:inline-block;  }
+.news_body .news_body_left  .spans .span.on{background:url(../images/common/huan_y.png);}
+
+.news_body .cen { width:664px; margin-left:56px;}
+.news_body .cen .news_k{ width:660px;}
+.news_body .cen .news_k .left{ width:94px; float:left;}
+.news_body .cen .news_k .left .year{ height:50px; width:94px; line-height:54px; font-size:14px; background:url(../images/news/news_g.png) no-repeat }
+.news_body .cen .news_k .right{ float:left; width:566px; position:relative; top:-10px;}
+.news_body .cen .news_k .right ul .news{ padding-left:30px; width:536px;  background:url(../images/common/g.png) no-repeat 13px 13px; height:28px; line-height:28px; border-bottom:1px dashed  #a3a3a3; color:#666666;}
+.news_body .cen .news_k .right ul .news .lanmu{  color:#333; float: left;width: 60px;}
+.news_body .cen .news_k .right ul .news a{color:#666666; display:inline-block; float:left;width: 350px; overflow: hidden;overflow:hidden;white-space: nowrap;text-overflow:ellipsis;}
+.news_body .cen .news_k .right ul .news a:hover{color:#ff4a00;}
+
+.news_body .right{ float:right; width:266px;}
+.news_body .right .img{ width:266px; height:175px; position:relative; margin-bottom:20px; cursor:pointer;}
+.news_body .right .img .title{ position:absolute; bottom:0px; width:266px; color:#ffffff; line-height:34px; display:none; height:34px; text-align:center; font-size:12px; background-color:#ff4a00;}
+.news_body .right .img:hover .title{ display:block;}
+
+
+
+
+
+.news_detail{  width:664px; padding:0 56px; float:left; }
+.news_detail .title{ height:50px;border-bottom:1px solid #f0efed; line-height:30px; text-align:center; color:#333333; font-size:18px;}
+.news_detail .detail{ height:48px; line-height:48px; text-align:center; color:#8c8c8c;}
+
+.news_detail .context{ width:660px; overflow:hidden; margin-top:10px; color:#333333; line-height:30px; font-size:14px;}
+
+.news_detail .fxd{ padding-bottom:15px; margin-top:50px; border-bottom:1px solid #f0efed; margin-bottom:15px;}
+
+.news_detail .qutlink{ color:#8c8c8c; height:26px; line-height:26px;}
+.news_detail .qutlink a{color:#8c8c8c;}
+.news_detail .qutlink a:hover{color:#666666;}
+
+
+
+
+.news_detail .pinlun{ margin-top: 40px;}
+.news_detail .pinlun .pl01{ margin-bottom: 40px;}
+.news_detail .pinlun .pl01 div{ float: left; }
+.news_detail .pinlun .pl01 .toux{ width: 70px;   }
+.news_detail .pinlun .pl01 .srbox{ height: 84px; width: 436px; border: 1px #dae2e5 solid;   }
+.news_detail .pinlun .pl01 .anniu{ width: 152px;   }
+.news_detail .pinlun .pl01 .anniu button{ width: 152px;  height: 86px; background: #c9c9c9; color: #fff; font-size: 18px;border: none;}
+.news_detail .pinlun .pl01 .anniu button:hover{ background: #ff4a00;}
+.news_detail .pinlun .pl02{  height: 32px; border-bottom: 1px solid #ebebeb; margin-top: 40px;}
+.news_detail .pinlun .pl03{   padding: 20px 0;border-bottom: 1px solid #ebebeb;float: left; }
+.news_detail .pinlun .pl03 div{ float: left; }
+.news_detail .pinlun .pl03 .toux{ width: 70px;   }
+.news_detail .pinlun .pl03 .srbox{ height: 84px; width: 630px; border: 1px #dae2e5 solid;   }
+.news_detail .pinlun .pl03 .shuru {width: 586px; }
+.news_detail .pinlun .pl03 .shuru .namesjs{ color: #ff4a00; font-weight: 700;  display: block; float: none; line-height: 20px; height: 30px; }
+.news_detail .pinlun .pl03 .shuru .namesjs .date{ color: #999; font-weight: normal; margin-left: 12px;}
+.news_detail .pinlun .pl03 .shuru .namesjs .time{ color: #999; font-weight: normal; margin-left: 6px;  }
+.news_detail .pinlun .pl03 .shuru .plnr{  display: block; float: none; }
+
+
+.news_detail .like{  width:660px; text-align:right;  }
+.news_detail  .nolike{ float:right; background:url(../images/designer/nolike.png) no-repeat #919191; border:0px; width:152px; height:40px; color:White; padding-left:30px; font-size:14px; }
+.news_detail  .mylike{float:right; background:url(../images/designer/like.png) no-repeat #919191; border:0px; width:152px; height:40px; color:White; padding-left:30px; font-size:14px; }
+
+
+
+
+
+/*.quotes {  padding: 3px; text-align:right; width:718px;}*/
+/*.quotes A { border-color: #ddd; border-style: solid; border-width: 1px; color: #aaa; margin-right: 2px; padding: 2px 5px; text-decoration: none; }*/
+/*.quotes A:hover { border-color: #a0a0a0; border-style: solid; border-width: 1px; margin-right: 2px; padding: 2px 5px; }*/
+/*.quotes A:active { border-color: #a0a0a0; border-style: solid; border-width: 1px; margin-right: 2px; padding: 2px 5px; }*/
+/*.quotes SPAN.current { background-color: #f0f0f0; border-color: #e0e0e0; border-style: solid; border-width: 1px; color: #aaa; font-weight: bold; margin-right: 2px; padding: 2px 5px; }*/
+/*.quotes SPAN.disabled { border-color: #f3f3f3; border-style: solid; border-width: 1px; color: #ccc; margin-right: 2px; padding: 2px 5px; }*/

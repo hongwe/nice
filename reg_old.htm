@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+    <title>注册</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit" />
+    <link href="css/common.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="js/common.js" type="text/javascript"></script>
+    <link href="css/reg.css" rel="stylesheet" type="text/css" />
+    <script>
+        $(function () {
+            $("input:text,input:password,textarea").focus(function () {
+                $(this).addClass("on");
+            }).blur(function () {
+                $(this).removeClass("on");
+                check($(this));
+            });
+
+            $("#submit").click(function () {
+                check($("#uid"));
+                check($("#pwd"));
+                check($("#pwds"));
+                check($("#phone"));
+            });
+        });
+        var check = function (object) {
+            var id = object.attr("id");
+            var obj = $("#" + id).val();
+            if (id == "uid") {
+                var regEx = /^[a-zA-z]\w{3,15}$/;
+                if (regEx.test(obj)) {
+                    var objs = object.parent(".info2").siblings(".info3");
+                    objs.find(".cuowu").hide();
+                    objs.find(".ok").show();
+                } else {
+                    var objs = object.parent(".info2").siblings(".info3");
+                    objs.find(".cuowu").show();
+                    objs.find(".ok").hide();;
+                }
+            } else if (id == "pwd") {
+                var regEx = /^\d{6}$/;
+                if (regEx.test(obj)) {
+                    var objs = object.parent(".info2").siblings(".info3");
+                    objs.find(".cuowu").hide();
+                    objs.find(".ok").show();
+                } else {
+                    var objs = object.parent(".info2").siblings(".info3");
+                    objs.find(".cuowu").show();
+                    objs.find(".ok").hide();;
+                }
+            } else if (id == "pwds") {
+                if (obj == $("#pwd").val()) {
+                    var objs = object.parent(".info2").siblings(".info3");
+                    objs.find(".cuowu").hide();
+                    objs.find(".ok").show();
+                } else {
+                    var objs = object.parent(".info2").siblings(".info3");
+                    objs.find(".cuowu").show();
+                    objs.find(".ok").hide();;
+                }
+            } else if (id == "phone") {
+                var regEx = /^(13[0-9]|14[0-9]|15[0-9]|18[0-9])\d{8}$/i;
+                if (regEx.test(obj)) {
+                    var objs = object.parent(".info2").siblings(".info3");
+                    objs.find(".cuowu").hide();
+                    objs.find(".ok").show();
+                } else {
+                    var objs = object.parent(".info2").siblings(".info3");
+                    objs.find(".cuowu").show();
+                    objs.find(".ok").hide();;
+                }
+            }
+        }
+
+
+    </script>
+
+</head>
+<body class="b-color-hui">
+    <div id="headerItem"></div>
+    <div class="reg clear">
+        <div class="reg_left">
+            <div class="line clear">
+                <div class="info1"><span class="f-color-r">*</span>用户名</div>
+                <div class="info2">
+                    <input type="text" class="text" placeholder="4-16位非数字开头的组合" id="uid" />
+                </div>
+                <div class="info3">
+                    <div class="ok"></div>
+                    <div class="cuowu">输入错误</div>
+                </div>
+            </div>
+
+            <div class="line clear">
+                <div class="info1"><span class="f-color-r">*</span>登录密码</div>
+                <div class="info2">
+                    <input type="password" class="text" placeholder="请输入6位以上的数字字母组合" id="pwd" />
+                </div>
+                <div class="info3">
+                    <div class="ok"></div>
+                    <div class="cuowu">输入错误</div>
+                </div>
+            </div>
+
+            <div class="line clear">
+                <div class="info1"><span class="f-color-r">*</span>确认密码</div>
+                <div class="info2">
+                    <input type="password" class="text" placeholder="请重复上面的密码" id="pwds" />
+                </div>
+                <div class="info3">
+                    <div class="ok"></div>
+                    <div class="cuowu">输入错误</div>
+                </div>
+            </div>
+
+            <div class="line clear">
+                <div class="info1"><span class="f-color-r">*</span>手机号</div>
+                <div class="info2">
+                    <input type="text" class="text" placeholder="请输入您的手机号码" id="phone" />
+                </div>
+                <div class="info3">
+                    <div class="ok"></div>
+                    <div class="cuowu">输入错误</div>
+                </div>
+            </div>
+            <div class="line clear" style="margin-bottom: 0px;">
+                <div class="info1"><span class="f-color-r">*</span>验证码</div>
+                <div class="info4">
+                    <input type="text" class="text left" placeholder="填写验证码" id="check" />
+                    <img src="images/reg/yzm.png" width="100" height="35" class="ml10 left" />
+                    <div class="qut">看不清楚?<a href="#" class="ml5">换一张</a></div>
+                </div>
+            </div>
+            <div style="height: 40px;">
+                <div class="ok"></div>
+                <div class="cuowu">输入错误</div>
+            </div>
+            <div class="line2">
+                阅读并接受 <a href="#">《Nice用户协议》</a>
+            </div>
+            <div class="line3">
+                <input type="button" class="btn" value="同意协议并注册" id="submit" />
+            </div>
+
+        </div>
+
+        <div class="reg_right clear">
+            <div class="reg_y_info1">您可以选择以下第三方帐号直接登录</div>
+            <div class="reg_y_info2">
+
+                <a href="#" class="weixin"></a>
+                <a href="#" class="weibo"></a>
+                <a href="#" class="qzone"></a>
+                <a href="#" class="renren"></a>
+            </div>
+            <div class="reg_y_info1">注册后立即享用最好的专业资源服务</div>
+            <div class="reg_y_info3">
+                <div class="select">E-newsletter订阅</div>
+                <div class="select">行业活动信息</div>
+                <div class="select">项目考察路线推荐</div>
+                <div class="select">猎头服务</div>
+            </div>
+
+        </div>
+
+    </div>
+
+     <div id="bottom">
+        <div class="nav">
+            <a href="#1">建言献策</a>|<a href="#1">法律咨询</a>|<a href="#1">联合办公</a>|<a href="#1">活动沙龙</a>|<a
+                href="#1">新闻推广</a>|<a href="#1">联系我们</a>
+        </div>
+        <div class="body f-size14">
+            <div class="text1">
+                国内首个专注于房地产领域的战略规划和设计师资源整合平台</div>
+            <div class="text2 f-size12">
+                版权声明：所有图片均受著作权保护，未经许可不得使用，不得转载、摘编。</div>
+            <div class="text3 f-size12">
+                版权所有 北京Nice网络科技有限公司 京ICP备10011865号-2 京公网安备11010502022735号</div>
+            <div class="text4">
+                <span style="color: #333333">与我们</span><span style="color: #ff4a00">合作</span>
+            </div>
+            <div class="text5 f-size12">
+                与Nice品牌合作，就会在一个以创意为重的国际环境下合作。</div>
+            <div class="text6 f-size12">
+                我们以客户至上，同时也相互挑战，以呈现最好的成果。</div>
+            <div class="text7">
+                品牌咨询热线 :</div>
+            <div class="text8">
+                010-8568 6666</div>
+        </div>
+    </div>
+</body>
+</html>

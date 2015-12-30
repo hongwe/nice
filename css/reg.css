@@ -1,0 +1,99 @@
+﻿
+.regbox  { width: 1240px; margin: 0 auto; }
+.regmain {  background: url(../images/reg/reg.png) no-repeat center 80px #fff; margin: 30px 0; float: left; padding-top: 230px; padding-bottom: 100px; width: 1240px;}
+.regmain .reg_left { width: 780px; float: left; border-right: 1px solid #e2e2e2; }
+.regmain .reg_left .line { height: 40px; margin-bottom: 20px; }
+.regmain .reg_left .line .info1 { width: 285px; text-align: right; height: 40px; color: #666666; font-size: 14px; float: left; line-height: 40px; }
+.regmain .reg_left .line .info2 { width: 225px; height: 40px; margin-left: 33px; float: left; }
+.regmain .reg_left .text { width: 205px; border-radius: 3px; padding-left: 7px; color: #666666; line-height: 38px; height: 38px; border: 1px solid #cccccc; }
+.regmain .reg_left .text.on { border-color: #74b9ef; box-shadow: 0px 1px 7px #74b9ef; }
+.regmain .reg_left .line .info3 { float: left; width: 200px; position: relative; }
+.regmain .reg_left .line .info4 { width: 450px; height: 40px; margin-left: 33px; float: left; }
+.regmain .reg_left .line .info4 .text { position: relative; width: 143px; border-radius: 3px; padding-left: 7px; color: #666666; line-height: 38px; height: 38px; border: 1px solid #cccccc; }
+.regmain .reg_left .line .info4 .qut { height: 14px; line-height: 50px; color: #666666; float: left; padding-left: 20px; }
+.regmain .reg_left .line .info4 .qut a { color: #0b73bb; }
+.regmain .reg_left .ok { display: none; height: 40px; background: url(../images/common/ok.png) no-repeat 10px 12px; }
+.regmain .reg_left .cuowu { display: none; height: 40px; background: url(../images/common/cuowu.png) no-repeat 10px 12px; padding-left: 34px; color: #666666; line-height: 40px; }
+.regmain .reg_left .line1 { height: 40px; margin-left: 318px; }
+.regmain .reg_left .line2 { height: 20px; margin-left: 318px; color: #666666; }
+.regmain .reg_left .line2 a { color: #2a9cd5; }
+.regmain .reg_left .line3 { margin-top: 20px; margin-left: 318px; height: 40px; }
+.regmain .reg_left .line3 .btn { height: 40px; width: 150px; border: none; background-color: #ff4a00; color: #fff; font-size: 14px; }
+.regmain .reg_right { float: left; }
+.regmain .reg_right .reg_y_info1 { width: 310px; margin-left: 70px; height: 28px; text-align: center; line-height: 28px; color: #666666; background: url(../images/reg/reg_y_info1.png) no-repeat; }
+.regmain .reg_right .reg_y_info2 { width: 160px; margin-left: 145px; height: 140px; }
+.regmain .reg_right .reg_y_info3 { width: 310px; margin-left: 70px; padding-top: 26px;  }
+.regmain .reg_right .reg_y_info2 a { margin-top: 39px; background: url("../images/reg/login_icons_small.png") no-repeat scroll 0 0; display: inline-block; height: 64px; margin-right: 14px; width: 64px; }
+.regmain .reg_right .reg_y_info2 a.qzone { background-position: -160px 0; }
+.regmain .reg_right .reg_y_info2 a.qzone:hover { background-position: -160px -80px; }
+.regmain .reg_right .reg_y_info2 a.weixin { background-position: 0px 0px; }
+.regmain .reg_right .reg_y_info2 a.weixin:hover { background-position: 0 -80px; }
+.regmain .reg_right .reg_y_info2 a.renren { background-position: -240px 0; margin-right: 0px; }
+.regmain .reg_right .reg_y_info2 a.renren:hover { background-position: -240px -80px; }
+.regmain .reg_right .reg_y_info2 a.weibo { background-position: -80px 0; }
+.regmain .reg_right .reg_y_info2 a.weibo:hover { background-position: -80px -80px; }
+.regmain .reg_right .reg_y_info3 .select{ height:26px;background: url("../images/reg/gouxuan.png") no-repeat 55px 6px; line-height:26px; padding-left:86px;}
+
+
+
+.loginmain {  background: url(../images/reg/login.png) no-repeat center 80px #fff; margin: 30px 0; float: left; padding-top: 230px; padding-bottom: 100px; width: 1240px;}
+.loginmain .reg_left { width: 780px; float: left; border-right: 1px solid #e2e2e2;}
+.loginmain .reg_left .line { height: 40px; margin-bottom: 20px; }
+.loginmain .reg_left .line .info1 { width: 285px; text-align: right; height: 40px; color: #666666; font-size: 14px; float: left; line-height: 40px; }
+.loginmain .reg_left .line .info2 { width: 225px; height: 40px; margin-left: 33px; float: left; }
+.loginmain .reg_left .text { width: 340px; border-radius: 3px; padding-left: 7px; color: #666666; line-height: 38px; height: 38px; border: 1px solid #cccccc; }
+.loginmain .reg_left .text.on { border-color: #74b9ef; box-shadow: 0px 1px 7px #74b9ef; }
+.loginmain .reg_left .line .info3 { float: left; width: 200px; position: relative; }
+.loginmain .reg_left .line .info4 { width: 450px; height: 40px; margin-left: 33px; float: left; }
+.loginmain .reg_left .line .info4 .text { position: relative; width: 143px; border-radius: 3px; padding-left: 7px; color: #666666; line-height: 38px; height: 38px; border: 1px solid #cccccc; }
+.loginmain .reg_left .line .info4 .qut { height: 14px; line-height: 50px; color: #666666; float: left; padding-left: 20px; }
+.loginmain .reg_left .line .info4 .qut a { color: #0b73bb; }
+.loginmain .reg_left .ok { display: none; height: 40px; background: url(../images/common/ok.png) no-repeat 10px 12px; }
+.loginmain .reg_left .cuowu { display: none; height: 40px; background: url(../images/common/cuowu.png) no-repeat 10px 12px; padding-left: 34px; color: #666666; line-height: 40px; }
+.loginmain .reg_left .line1 { height: 40px; margin-left: 318px; }
+.loginmain .reg_left .line2 { height: 20px; margin-left: 318px; color: #666666; }
+.loginmain .reg_left .line2 a { color: #2a9cd5; }
+.loginmain .reg_left .line3 { margin-top: 20px; margin-left: 318px; height: 40px; }
+.loginmain .reg_left .line3 .btn { height: 40px; width: 150px; border: none; background-color: #ff4a00; color: #fff; font-size: 14px; }
+.loginmain .reg_right { float: left; }
+.loginmain .reg_right .reg_y_info1 { width: 310px; margin-left: 70px; height: 28px; text-align: center; line-height: 28px; color: #666666; background: url(../images/reg/reg_y_info1.png) no-repeat; }
+.loginmain .reg_right .reg_y_info2 { width: 160px; margin-left: 145px; height: 140px; }
+.loginmain .reg_right .reg_y_info3 { width: 310px; margin-left: 70px; padding-top: 26px;  }
+.loginmain .reg_right .reg_y_info2 a { margin-top: 39px; background: url("../images/reg/login_icons_small.png") no-repeat scroll 0 0; display: inline-block; height: 64px; margin-right: 14px; width: 64px; }
+.loginmain .reg_right .reg_y_info2 a.qzone { background-position: -160px 0; }
+.loginmain .reg_right .reg_y_info2 a.qzone:hover { background-position: -160px -80px; }
+.loginmain .reg_right .reg_y_info2 a.weixin { background-position: 0px 0px; }
+.loginmain .reg_right .reg_y_info2 a.weixin:hover { background-position: 0 -80px; }
+.loginmain .reg_right .reg_y_info2 a.renren { background-position: -240px 0; margin-right: 0px; }
+.loginmain .reg_right .reg_y_info2 a.renren:hover { background-position: -240px -80px; }
+.loginmain .reg_right .reg_y_info2 a.weibo { background-position: -80px 0; }
+.loginmain .reg_right .reg_y_info2 a.weibo:hover { background-position: -80px -80px; }
+.loginmain .reg_right .reg_y_info3 .select{ height:26px;background: url("../images/reg/gouxuan.png") no-repeat 55px 6px; line-height:26px; padding-left:86px;}
+
+
+.loginmain .info1 {  font-size: 14px; margin-left:  180px;  height: 60px;}
+.loginmain .info1 label{  width: 70px; display: block;float: left; line-height: 40px; }
+.loginmain .info2 { color: #666666; height: 32px; line-height: 20px; font-size: 18px; background: url(../images/common/login-g.png) no-repeat; text-align: center; }
+.loginmain .info3 { width: 340px; margin-left: 120px; margin-top: 15px; height: 17px; margin-left: 250px; }
+.loginmain .info3 .c1 { position: relative; top: 1px; }
+.loginmain .info3 .c2 { display: inline-block; background: url(../images/common/cuowu.png) no-repeat 10px 0px; color: #666666; margin-left: 10px; padding-left: 30px; height: 17px; }
+.loginmain .info3 .c3 { display: inline-block; background: url(../images/common/wenhao.png) no-repeat 10px 0px; color: #666666; margin-left: 10px; padding-left: 30px; height: 17px; }
+.loginmain .info3 a.c3 { color: #666 ;}
+.loginmain .info3 a.c3:hover { color: #2a9cd5 ; text-decoration: underline;}
+
+.loginmain .info4 { margin-top: 15px; margin-left: 250px; }
+.loginmain .info4 .btn { width: 152px; height: 40px; font-size: 14px; border: none; color: white; }
+.loginmain .info4 .btn.login { background-color: #ff4a00; margin-right: 38px; }
+.loginmain .info4 .btn.login:hover { background-color: #d93f00; }
+.loginmain .info4 .btn.reg { background-color: #9d9d9d; }
+.loginmain .info4 .btn.reg:hover { background-color: #787878; }
+
+
+
+
+
+
+
+
+
+

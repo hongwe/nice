@@ -1,0 +1,38 @@
+﻿.about_head_bar { background: url(/images/service/adout_bar.jpg) no-repeat; width: 1240px; height: 190px; }
+.about_head_nav { height: 40px; line-height: 40px; margin-top: 2px; border-bottom: 1px solid #f0efed; font-size: 14px; }
+.about_head_nav .left_hy { height: 26px; line-height: 26px; display: inline-block; text-align: center; width: 78px; background-color: #f7f7f6; color: #666666; margin-right: 8px; }
+.about_head_nav .left_hyyw { color: #ff4a00; }
+.about_head_nav .right { float: right; margin-right: 20px; font-size: 12px; }
+.about_head_nav .right .cur_loc { height: 26px; line-height: 26px; display: inline-block; text-align: right; width: 78px; background: url(/images/common/home.png) no-repeat 0px 6px; }
+
+.about_body{ text-align:center; line-height:30px; color:#333333; font-size:16px; margin:80px 0px;}
+.about_setp{ background: url(/images/service/setp.jpg) no-repeat center; width:1030px; height:263px; margin:0 auto;}
+.about_bar{ height:465px; background-color:#ebebeb; position:relative; margin-top:50px;}
+.about_bar_body{background: url(/images/service/xueshan.jpg) no-repeat; height:131px; position:absolute; bottom:0px; width:1240px; z-index:1px;}
+.about_service{ height:180px; position:relative; background:url(/images/service/bar_service.png) no-repeat center; }
+.about_service .about_service_body{ width:197px; position:relative; top:110px; margin:0 auto; text-align:center; font-size:18px; color:#5e5e5e;}
+.about_yuan{ height:168px; color:#333333; font-size:14px; position:relative;}
+.about_yuan .yuan{ float:left;background: url(/images/service/huanyuan.png) no-repeat; height:168px; width:620px; z-index:20; position:relative;}
+.about_yuan .yuan.yuan_left{ background-position:150px 0px;}
+.about_yuan .yuan.yuan_right{ background-position:45px 0px;}
+.about_yuan .yuan .text{ font-size:24px; color:#ffffff; position:absolute;}
+.about_yuan .yuan .text1{ top:48px; left:198px;}
+.about_yuan .yuan .text2{ top:78px; left:188px;}
+.about_yuan .yuan .text3{ top:67px; left:84px;}
+.about_submit{ width:1023px; margin:0 auto; margin-top:110px;}
+.about_submit .sub_left{ width:280px; float:left;}
+.about_submit .sub_left .sub_left_t{background: url(/images/service/shu.png) no-repeat}
+.about_submit .sub_left .title{ height:20px; color:#333333; font-size:18px; padding-left:15px; line-height:15px;}
+.about_submit .sub_left .detail{ height:30px; color:#a5a5a5; font-size:12px; padding-left:15px; line-height:30px; font-size:14px;}
+.about_submit .sub_right{width:743px; float:left;}
+.about_submit .sub_right .info1{width:743px;}
+.about_submit .sub_right .info1 .info1_left{ float:left; width:269px;}
+.about_submit .sub_right .info1 .info1_right{ float:right;}
+.about_submit .sub_right .info1 .info1_left .text{ width:257px; height:32px; line-height:32px; padding:0 5px; border:1px solid #dbdbdb;}
+.about_submit .sub_right .info1 .info1_right .texts{ width:452px; height:110px; border:1px solid #dbdbdb; padding:5px;}
+.about_submit .sub_right .info2 .btn{ border:0px; width:743px; height:36px; color:#ffffff; background-color:#555555;}
+
+
+
+.about_yuan .yuan .context_left{ margin-left:338px; margin-top:30px; width:225px; height:100px; color:#333333; line-height:25px; font-size:14px; overflow:hidden;}
+.about_yuan .yuan .context_right{ margin-left:234px; margin-top:30px; width:225px; height:100px; color:#333333; line-height:25px; font-size:14px; overflow:hidden;}

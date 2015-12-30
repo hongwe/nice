@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+    <title>首页</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="renderer" content="webkit"/>
+    <link href="../css/common.css" rel="stylesheet" type="text/css"/>
+    <link href="../css/home.css" rel="stylesheet" type="text/css"/>
+    <script src="../js/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="../js/common.js" type="text/javascript"></script>
+    <script src="../js/home.js" type="text/javascript"></script>
+    <script src="../js/center.js" type="text/javascript"></script>
+    <script>
+        $(function () {
+            $("input:text,input:password,textarea").focus(function () {
+                $(this).addClass("on");
+            }).blur(function () {
+                $(this).removeClass("on");
+                check($(this));
+            });
+
+
+        });
+    </script>
+</head>
+<body>
+<!--头部上方样式, 可复制-->
+<div id="bar">
+    <div class="main clear">
+        <div class="fl bar_left">
+            nice网站是国内专注于房地产领域的战略规划和设计资源整合的平台。
+        </div>
+        <div class="fr clear">
+            <div class="bar_jykj f-size14 left">
+                交易空间
+            </div>
+            <div class="bar_login f-size14 left">
+                <a href="#">登录</a></div>
+            <div class="bar_reg f-size14 left">
+                <a href="#">注册</a></div>
+        </div>
+    </div>
+</div>
+<!--导航样式, 可复制;-->
+<div id="header">
+    <div class="main clear">
+        <div class="header_left">
+        </div>
+
+    </div>
+</div>
+<div class="container-fullg clear">
+    <div class="pcentermain clear">
+        <div class="pcenter-left02">
+            <div class="menu subNavBox">
+                <div><img src="../images/center/title.png"/></div>
+
+
+                <div class="subNav"><a href="info.htm">个人资料</a>
+
+                </div>
+                <ul class="navContent"></ul>
+
+                <div class="subNav currentDd currentDt"><a href="edit.htm">修改个人资料</a></div>
+                <ul class="navContent"></ul>
+
+
+            </div>
+
+            <div class="sjbuttonbox">
+                <input type="button" class="sjgz" value="升级到雇主"/>
+                <input type="button" class="sjgz" value="升级到设计师" onclick="location.href='shziliao.htm'"/>
+            </div>
+        </div>
+
+        <div class="pcenter-right">
+            <div class="rightbox">
+                <div class="contitle">修改个人资料
+                    <div class="tip">1、填写注册信息 > 2、提交审核 > 3、认证成功<span class="f-color-h">（审核需要1-3个工作日 ）</span></div>
+                </div>
+
+
+                <div class="conmain">
+
+                    <div class="I_tabr ">
+                        <ul class="I_N_tabr" id="N_tab">
+                            <li class="yes" onclick="javascript:test_item(0);" id="tab01"><a href="###"
+                                                                                        onfocus="this.blur()">基本资料</a>
+                            </li>
+                            <li onclick="javascript:test_item(1);" id="tab02"><a href="###" onfocus="this.blur()">详细资料</a>
+                            </li>
+
+                        </ul>
+
+                        <div class="contenta " id="I_tab0">
+                            <div class="reg_left">
+
+                                <div class="line clear">
+                                    <div class="info1"><span class="f-color-r">*</span>真实姓名：</div>
+                                    <div class="info2">
+                                        <input type="text" class="text" placeholder="真实姓名" id="name"/>
+                                    </div>
+                                    <div class="info3">
+                                        <div class="ok"></div>
+                                        <div class="cuowu">输入错误</div>
+                                    </div>
+                                </div>
+                                <div class="line clear">
+                                    <div class="info1"><span class="f-color-r">*</span>性别：</div>
+                                    <div class="info2">
+                                        <label for="man">男</label><input type="radio" name="sex" id="man"/><label
+                                            for="women">女</label><input type="radio" name="sex" id="women"/>
+                                    </div>
+                                    <div class="info3">
+                                        <div class="ok"></div>
+                                        <div class="cuowu">输入错误</div>
+                                    </div>
+                                </div>
+
+                                <div class="line clear">
+                                    <div class="info1"><span class="f-color-r">*</span>出生日期：</div>
+                                    <div class="info2">
+                                        <input type="text" class="text" placeholder="1900-01-10" id="birthday"/>
+                                    </div>
+                                    <div class="info3">
+                                        <div class="ok"></div>
+                                        <div class="cuowu">输入错误</div>
+                                    </div>
+                                </div>
+                                <div class="line clear">
+                                    <div class="info1"><span class="f-color-r">*</span>居住地：</div>
+                                    <div class="info2">
+                                        <input type="text" class="text" placeholder="xx省xx市" id="readdress"/>
+                                    </div>
+                                    <div class="info3">
+                                        <div class="ok"></div>
+                                        <div class="cuowu">输入错误</div>
+                                    </div>
+                                </div>
+                                <div class="line clear">
+                                    <div class="info1"><span class="f-color-r">*</span>户口：</div>
+                                    <div class="info2">
+                                        <input type="text" class="text" placeholder="户口所在地" id="acaddress"/>
+                                    </div>
+                                    <div class="info3">
+                                        <div class="ok"></div>
+                                        <div class="cuowu">输入错误</div>
+                                    </div>
+                                </div>
+                                <div class="line clear">
+                                    <div class="info1"><span class="f-color-r">*</span>身份证号：</div>
+                                    <div class="info2">
+                                        <input type="text" class="text" placeholder="请输入您的身份证号" id="idnumber"/>
+                                    </div>
+                                    <div class="info3">
+                                        <div class="ok"></div>
+                                        <div class="cuowu">输入错误</div>
+                                    </div>
+                                </div>
+
+                                <div class="line clear">
+                                    <div class="info1"><span class="f-color-r">*</span>毕业院校：</div>
+                                    <div class="info2">
+                                        <input type="text" class="text" placeholder="请输入您的毕业院校" id="school"/>
+                                    </div>
+                                    <div class="info3">
+                                        <div class="ok"></div>
+                                        <div class="cuowu">输入错误</div>
+                                    </div>
+                                </div>
+                                <div class="line clear">
+                                    <div class="info1"><span class="f-color-r">*</span>最高学历：</div>
+                                    <div class="info2">
+                                        <input type="text" class="text" placeholder="请输入您的最高学历" id="xueli"/>
+                                    </div>
+                                    <div class="info3">
+                                        <div class="ok"></div>
+                                        <div class="cuowu">输入错误</div>
+                                    </div>
+                                </div>
+
+                                <div class="line clear">
+                                    <div class="info1"><span class="f-color-r">*</span>申请职位ID：</div>
+                                    <div class="info2">
+                                        <select class="text">
+                                            <option>初级设计师</option>
+                                            <option>中级设计师</option>
+                                            <option>顶级设计师</option>
+                                        </select>
+                                    </div>
+                                    <div class="info3">
+                                        <div class="ok"></div>
+                                        <div class="cuowu">输入错误</div>
+                                    </div>
+                                </div>
+                                <div class="line clear">
+                                    <div class="info1"><span class="f-color-r">*</span>当前工作单位：</div>
+                                    <div class="info2">
+                                        <input type="text" class="text" placeholder="请输入您的工作单位" id="danwei"/>
+                                    </div>
+                                    <div class="info3">
+                                        <div class="ok"></div>
+                                        <div class="cuowu">输入错误</div>
+                                    </div>
+                                </div>
+                                <div class="line clear">
+                                    <div class="info1"><span class="f-color-r">*</span>当前工作职位：</div>
+                                    <div class="info2">
+                                        <input type="text" class="text" placeholder="请输入您的工作职位" id="zhiwei"/>
+                                    </div>
+                                    <div class="info3">
+                                        <div class="ok"></div>
+                                        <div class="cuowu">输入错误</div>
+                                    </div>
+                                </div>
+
+                                <div class="line clear">
+                                    <div class="info1"><span class="f-color-r">*</span>可接受接单范围：</div>
+                                    <div class="info2">
+                                        <select class="text">
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                        </select>
+                                    </div>
+                                    <div class="info3">
+                                        <div class="ok"></div>
+                                        <div class="cuowu">输入错误</div>
+                                    </div>
+                                </div>
+                                <div class="line clear">
+                                    <div class="info1">服务特点：</div>
+                                    <div class="info4">
+                                        <textarea rows="5"></textarea>
+
+                                    </div>
+
+
+                                </div>
+
+                                <div class="line clear">
+                                    <div class="info1">邮箱：</div>
+                                    <div class="info2">
+                                        <input type="text" class="text" placeholder="请输入您的邮箱" id="email"/>
+                                    </div>
+                                    <div class="info3">
+                                        <div class="ok"></div>
+                                        <div class="cuowu">输入错误</div>
+                                    </div>
+                                </div>
+                                <div class="line clear">
+                                    <div class="info1"><span class="f-color-r">*</span>手机号码：</div>
+                                    <div class="info2">
+                                        <input type="text" class="text" placeholder="请输入您的手机号码" id="phohenumber"/>
+                                    </div>
+                                    <div class="info3">
+                                        <div class="ok"></div>
+                                        <div class="cuowu">输入错误</div>
+                                    </div>
+                                </div>
+                                <div class="line clear">
+                                    <div class="info1">座机号码：</div>
+                                    <div class="info2">
+                                        <input type="text" class="text" placeholder="请输入您的座机号" id="telnumber"/>
+                                    </div>
+                                    <div class="info3">
+                                        <div class="ok"></div>
+                                        <div class="cuowu">输入错误</div>
+                                    </div>
+                                </div>
+                                <div class="line clear">
+                                    <div class="info1">设计师QQ：</div>
+                                    <div class="info2">
+                                        <input type="text" class="text" placeholder="请输入您的座机号" id="sjsqq"/>
+                                    </div>
+                                    <div class="info3">
+                                        <div class="ok"></div>
+                                        <div class="cuowu">输入错误</div>
+                                    </div>
+                                </div>
+                                <div class="line clear">
+                                    <div class="info1">设计师微信：</div>
+                                    <div class="info2">
+                                        <input type="text" class="text" placeholder="请输入您的座机号" id="sjswx"/>
+                                    </div>
+                                    <div class="info3">
+                                        <div class="ok"></div>
+                                        <div class="cuowu">输入错误</div>
+                                    </div>
+                                </div>
+                                <div class="line clear">
+                                    <div class="info1"><span class="f-color-r">*</span>设计领域：</div>
+
+                                    <div class="info4">
+                                        <div class="sjlytit">总图规划</div>
+                                        <ul>
+                                        <li><input type="checkbox" name="zone" id="sj01"/><label for="sj01">总图规划</label></li>
+                                        <li><input type="checkbox" name="zone" id="sj02"/><label for="sj02">总图规划</label></li>
+                                        <li><input type="checkbox" name="zone" id="sj03"/><label for="sj03">总图规划</label></li>
+                                        <li><input type="checkbox" name="zone" id="sj04"/><label for="sj04">总图规划</label></li>
+                                        <li><input type="checkbox" name="zone" id="sj05"/><label for="sj05">总图规划</label></li>
+                                        <li><input type="checkbox" name="zone" id="sj06"/><label for="sj06">总图规划</label></li>
+                                        <li><input type="checkbox" name="zone" id="sj07"/><label for="sj07">总图规划</label></li>
+                                        <li><input type="checkbox" name="zone" id="sj08"/><label for="sj08">总图规划</label></li>
+                                        </ul>
+                                        <div class="sjlytit">建筑及专业配套设计</div>
+                                        <ul>
+                                        <li><input type="checkbox" name="zone" id="sj11"/><label for="sj11">建筑及专业配套设计</label></li>
+                                        <li><input type="checkbox" name="zone" id="sj12"/><label for="sj12">建筑及专业配套设计</label></li>
+                                        <li><input type="checkbox" name="zone" id="sj13"/><label for="sj13">建筑及专业配套设计</label></li>
+                                        <li><input type="checkbox" name="zone" id="sj14"/><label for="sj14">建筑及专业配套设计</label></li>
+                                        <li><input type="checkbox" name="zone" id="sj15"/><label for="sj15">建筑及专业配套设计</label></li>
+                                        <li><input type="checkbox" name="zone" id="sj16"/><label for="sj16">建筑及专业配套设计</label></li>
+                                        <li><input type="checkbox" name="zone" id="sj17"/><label for="sj17">建筑及专业配套设计</label></li>
+                                        <li><input type="checkbox" name="zone" id="sj18"/><label for="sj18">建筑及专业配套设计</label></li>
+                                        </ul>
+                                        <div class="sjlytit">室内设计</div>
+                                        <ul>
+                                        <li><input type="checkbox" name="zone" id="sj21"/><label for="sj21">室内设计</label></li>
+                                        <li><input type="checkbox" name="zone" id="sj22"/><label for="sj22">室内设计</label></li>
+                                        <li><input type="checkbox" name="zone" id="sj23"/><label for="sj23">室内设计</label></li>
+                                        <li><input type="checkbox" name="zone" id="sj24"/><label for="sj24">室内设计</label></li>
+                                        <li><input type="checkbox" name="zone" id="sj25"/><label for="sj25">室内设计</label></li>
+                                        <li><input type="checkbox" name="zone" id="sj26"/><label for="sj26">室内设计</label></li>
+                                        <li><input type="checkbox" name="zone" id="sj27"/><label for="sj27">室内设计</label></li>
+                                        <li><input type="checkbox" name="zone" id="sj28"/><label for="sj28">室内设计</label></li>
+                                        </ul>
+                                        <div class="sjlytit">景观设计</div>
+                                        <ul>
+                                        <li><input type="checkbox" name="zone" id="sj31"/><label for="sj31">景观设计</label></li>
+                                        <li><input type="checkbox" name="zone" id="sj32"/><label for="sj32">景观设计</label></li>
+                                        <li><input type="checkbox" name="zone" id="sj33"/><label for="sj33">景观设计</label></li>
+                                        <li><input type="checkbox" name="zone" id="sj34"/><label for="sj34">景观设计</label></li>
+                                        <li><input type="checkbox" name="zone" id="sj35"/><label for="sj35">景观设计</label></li>
+                                        <li><input type="checkbox" name="zone" id="sj36"/><label for="sj36">景观设计</label></li>
+                                        <li><input type="checkbox" name="zone" id="sj37"/><label for="sj37">景观设计</label></li>
+                                        <li><input type="checkbox" name="zone" id="sj38"/><label for="sj38">景观设计</label></li>
+                                        </ul>
+                                        <div class="sjlytit">雕塑设计</div>
+                                        <ul>
+                                        <li><input type="checkbox" name="zone" id="sj41"/><label for="sj41">雕塑设计</label></li>
+                                        <li><input type="checkbox" name="zone" id="sj42"/><label for="sj42">雕塑设计</label></li>
+                                        <li><input type="checkbox" name="zone" id="sj43"/><label for="sj43">雕塑设计</label></li>
+                                        <li><input type="checkbox" name="zone" id="sj44"/><label for="sj44">雕塑设计</label></li>
+                                        <li><input type="checkbox" name="zone" id="sj45"/><label for="sj45">雕塑设计</label></li>
+                                        <li><input type="checkbox" name="zone" id="sj46"/><label for="sj46">雕塑设计</label></li>
+                                        <li><input type="checkbox" name="zone" id="sj47"/><label for="sj47">雕塑设计</label></li>
+                                        <li><input type="checkbox" name="zone" id="sj48"/><label for="sj48">雕塑设计</label></li>
+                                        </ul>
+                                        <ul>
+                                        <div class="sjlytit">导向标记设计</div>
+                                        <li><input type="checkbox" name="zone" id="sj51"/><label for="sj51">导向标记设计</label></li>
+                                        <li><input type="checkbox" name="zone" id="sj52"/><label for="sj52">导向标记设计</label></li>
+                                        <li><input type="checkbox" name="zone" id="sj53"/><label for="sj53">导向标记设计</label></li>
+                                        <li><input type="checkbox" name="zone" id="sj54"/><label for="sj54">导向标记设计</label></li>
+                                        <li><input type="checkbox" name="zone" id="sj55"/><label for="sj55">导向标记设计</label></li>
+                                        <li><input type="checkbox" name="zone" id="sj56"/><label for="sj56">导向标记设计</label></li>
+                                        <li><input type="checkbox" name="zone" id="sj57"/><label for="sj57">导向标记设计</label></li>
+                                        <li><input type="checkbox" name="zone" id="sj58"/><label for="sj58">导向标记设计</label></li>
+                                        </ul>
+                                        <div class="sjlytit">灯光照明设计</div>
+                                        <ul>
+                                        <li><input type="checkbox" name="zone" id="sj61"/><label for="sj61">灯光照明设计</label></li>
+                                        <li><input type="checkbox" name="zone" id="sj62"/><label for="sj62">灯光照明设计</label></li>
+                                        <li><input type="checkbox" name="zone" id="sj63"/><label for="sj63">灯光照明设计</label></li>
+                                        <li><input type="checkbox" name="zone" id="sj64"/><label for="sj64">灯光照明设计</label></li>
+                                        <li><input type="checkbox" name="zone" id="sj65"/><label for="sj65">灯光照明设计</label></li>
+                                        <li><input type="checkbox" name="zone" id="sj66"/><label for="sj66">灯光照明设计</label></li>
+                                        <li><input type="checkbox" name="zone" id="sj67"/><label for="sj67">灯光照明设计</label></li>
+                                        <li><input type="checkbox" name="zone" id="sj68"/><label for="sj68">灯光照明设计</label></li>
+                                        </ul>
+
+
+                                    </div>
+
+                                    <div class="info3">
+                                        <div class="ok"></div>
+                                        <div class="cuowu">输入错误</div>
+                                    </div>
+                                </div>
+
+                                <input type="button" class="button03" value="下一步" id="next01"/>
+                            </div>
+
+                            <div class="conrightbox01"><span class="left w220"><img src="../images/center/userpic.png"/> </span>
+
+                                <div class="left w240">
+                                    <div class="h25"></div>
+                                    <button type="button" class="button01">从电脑中选择</button>
+                                    <p class="lh20 mt20">
+                                        请上传您的品牌Logo或者个人真实头像<br/>
+                                        请勿在形象标示上留有任何联系方式的信息<br/>
+                                        会导致您的头像无法通过审核<br/>
+                                        支持<span class="f-color-h">JPG、PNG</span>格式，图片大小不超过5MB</p></div>
+
+
+                            </div>
+
+                        </div>
+
+                        <div class="no cont1" id="I_tab1">
+                            <div class="reg_left">
+                                <div class="xxtitbox">教育经历
+                                    <div class="add01"><a href="###" onclick="afterText()">添加教育经历</a></div>
+                                </div>
+
+
+                                <div class="linebox" style="display: none">
+
+
+                                    <!--<div class="line clear">-->
+                                        <!--<div class="info1"><span class="f-color-r">*</span>毕业院校：</div>-->
+                                        <!--<div class="info2">-->
+                                            <!--<input type="text" class="text"/>-->
+                                        <!--</div>-->
+                                        <!--<div class="info3">-->
+                                            <!--<div class="ok"></div>-->
+                                            <!--<div class="cuowu">输入错误</div>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                    <!--<div class="line clear">-->
+                                        <!--<div class="info1"><span class="f-color-r">*</span>就读时间：</div>-->
+                                        <!--<div class="info2">-->
+                                            <!--<input type="text" class="time"/> 至 <input type="text" class="time"/>-->
+                                        <!--</div>-->
+                                        <!--<div class="info3">-->
+                                            <!--<div class="ok"></div>-->
+                                            <!--<div class="cuowu">输入错误</div>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+
+                                    <!--<div class="line clear">-->
+                                        <!--<div class="info1"><span class="f-color-r">*</span>学历：</div>-->
+                                        <!--<div class="info2">-->
+                                            <!--<input type="text" class="text"/>-->
+                                        <!--</div>-->
+                                        <!--<div class="info3">-->
+                                            <!--<div class="ok"></div>-->
+                                            <!--<div class="cuowu">输入错误</div>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                    <!--<div class="line clear">-->
+                                        <!--<div class="info1"><span class="f-color-r">*</span>专业：</div>-->
+                                        <!--<div class="info2">-->
+                                            <!--<input type="text" class="text"/>-->
+                                        <!--</div>-->
+                                        <!--<div class="info3">-->
+                                            <!--<div class="ok"></div>-->
+                                            <!--<div class="cuowu">输入错误</div>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+
+                                </div>
+                                <div class="h50"></div>
+
+
+                                <div class="xxtitbox">工作经历
+                                    <div class="add01"><a href="###" onclick="afterText01()">添加工作经历</a></div>
+                                </div>
+
+                                <div class="linebox01" style="display: none">
+
+                                    <!--<div class="line clear">-->
+                                        <!--<div class="info1"><span class="f-color-r">*</span>工作单位：</div>-->
+                                        <!--<div class="info2">-->
+                                            <!--<input type="text" class="text"/>-->
+                                        <!--</div>-->
+                                        <!--<div class="info3">-->
+                                            <!--<div class="ok"></div>-->
+                                            <!--<div class="cuowu">输入错误</div>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                    <!--<div class="line clear">-->
+                                        <!--<div class="info1"><span class="f-color-r">*</span>工作时间：</div>-->
+                                        <!--<div class="info2">-->
+                                            <!--<input type="text" class="time"/> 至 <input type="text" class="time"/>-->
+                                        <!--</div>-->
+                                        <!--<div class="info3">-->
+                                            <!--<div class="ok"></div>-->
+                                            <!--<div class="cuowu">输入错误</div>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+
+                                    <!--<div class="line clear">-->
+                                        <!--<div class="info1"><span class="f-color-r">*</span>所在部门：</div>-->
+                                        <!--<div class="info2">-->
+                                            <!--<input type="text" class="text"/>-->
+                                        <!--</div>-->
+                                        <!--<div class="info3">-->
+                                            <!--<div class="ok"></div>-->
+                                            <!--<div class="cuowu">输入错误</div>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                    <!--<div class="line clear">-->
+                                        <!--<div class="info1"><span class="f-color-r">*</span>职位：</div>-->
+                                        <!--<div class="info2">-->
+                                            <!--<input type="text" class="text"/>-->
+                                        <!--</div>-->
+                                        <!--<div class="info3">-->
+                                            <!--<div class="ok"></div>-->
+                                            <!--<div class="cuowu">输入错误</div>-->
+                                        <!--</div>-->
+                                    <!--</div>-->
+                                    <!--<div class="line clear">-->
+                                        <!--<div class="info1">工作描述：</div>-->
+                                        <!--<div class="info4">-->
+                                            <!--<textarea rows="8"></textarea>-->
+
+                                        <!--</div>-->
+
+
+                                    <!--</div>-->
+
+                                </div>
+                                <div class="h50"></div>
+                                <div class="line clear">
+                                    <div class="info1"><span class="f-color-r">*</span>上传附件：</div>
+                                    <div class="info2">
+                                        <button type="button" class="button01">从电脑中选择</button>
+                                        <p><img src="../images/common/biez.png"/> card.rar <span
+                                                class="f-color-h">删除</span></p>
+                                    </div>
+                                    <div class="info3">
+                                        <p class="f-color-h">请上传身份证正反面、毕业证书、</p>
+
+                                        <p class="f-color-h">职称证明、注册证...等附件</p>
+
+                                        <p>1、必须看清证件信息</p>
+
+                                        <p>2、仅支持 <span class="f-color-h">rar压缩包格式</span>，文件大小不超过10M</p>
+
+                                        <p>3、您提供的照片信息将予以保护，不会用于其他用途。</p>
+
+
+                                    </div>
+
+                                </div>
+
+
+                                <div class="line clear">
+                                    <div class="info1"><span class="f-color-r">*</span>自我评述：</div>
+
+
+                                    <div class="info5">
+                                        <textarea rows="8"></textarea>
+
+                                    </div>
+
+
+                                </div>
+
+                                <input type="button" class="button02" value="提交审核" onclick="location.href='info02.htm'" />
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="clear"></div>
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<!--尾部上方样式, 可复制-->
+<div class="footer">
+    <div class="conbox">
+        <div class="ftbox01"><img src="../images/footer/logo.png"/></div>
+        <div class="ftbox02"><img src="../images/footer/wenzi01.png"/>
+
+            <p class="hui01 f-size14 mt10">国内首个专注于房地产领域的战略规划和设计师资源整合平台</p>
+
+            <p class="hui02 f-size12 line01">版权声明：所有图片均受著作权保护，未经许可不得使用，不得转载、摘编。</p>
+
+            <p class="hui02 f-size12">版权所有 北京Nice网络科技有限公司 京ICP备10011865号-2 京公网安备11010502022735号</p>
+        </div>
+        <div class="ftbox03">
+            <p class="hui01 f-size24 lh40 fb">与我们合作</p>
+
+            <p class="hui01 f-size12">与Nice品牌合作，就会在一个以创意为重的国际环境下合作。</p>
+
+            <p class="hui01 f-size12">我们以客户至上，同时也相互挑战，以呈现最好的成果。</p>
+
+            <div class="telbox"><span class="title">咨询热线</span> <span class="shuzi">010-8568 6666</span></div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+
+    function test_item(n) {
+        var menu = document.getElementById("N_tab");
+        var menuli = menu.getElementsByTagName("li");
+        for (var i = 0; i < menuli.length; i++) {
+            menuli[i].className = "";
+            document.getElementById("I_tab" + i).className = "no";
+            document.getElementById("I_tab" + n).className = "content";
+        }
+        menuli[n].className = "yes";
+    }
+</script>
+</body>
+</html>
