@@ -6,6 +6,7 @@
 .regmain .reg_left .line .info1 { width: 285px; text-align: right; height: 40px; color: #666666; font-size: 14px; float: left; line-height: 40px; }
 .regmain .reg_left .line .info2 { width: 225px; height: 40px; margin-left: 33px; float: left; }
 .regmain .reg_left .text { width: 205px; border-radius: 3px; padding-left: 7px; color: #666666; line-height: 38px; height: 38px; border: 1px solid #cccccc; }
+.regmain .reg_left .text2 { width: 125px; border-radius: 3px 0 0 3px; padding-left: 7px; color: #666666; line-height: 38px; height: 38px; border: 1px solid #cccccc; float: left; }
 .regmain .reg_left .text.on { border-color: #74b9ef; box-shadow: 0px 1px 7px #74b9ef; }
 .regmain .reg_left .line .info3 { float: left; width: 200px; position: relative; }
 .regmain .reg_left .line .info4 { width: 450px; height: 40px; margin-left: 33px; float: left; }
@@ -87,6 +88,9 @@
 .loginmain .info4 .btn.login:hover { background-color: #d93f00; }
 .loginmain .info4 .btn.reg { background-color: #9d9d9d; }
 .loginmain .info4 .btn.reg:hover { background-color: #787878; }
+
+.phonecbtn{height: 39.6px; width: 82px; border: none; color: #fff; float: left; margin-left: -2px; background: #ff4a00; }
+input[disabled=true]{ background: #ccc;}
 
 
 

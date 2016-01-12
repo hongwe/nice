@@ -166,7 +166,7 @@ input {color: #333;}
 
 
 #header { height: 110px; color: #666666; min-width: 1240px; }
-#header .header_left { width: 805px; height: 110px; background: url(../images/common/hreder_login.png) no-repeat; float: left; position: relative; }
+#header .header_left { width: 805px; height: 110px; background: url(../images/common/bailogo.png) no-repeat 0 -37px; float: left; position: relative; }
 #header .header_right { width: 435px; height: 110px; float: left; color: #666666; }
 #header .header_nav_common { height: 106px; border-bottom: 4px solid #fff; float: left; }
 #header .header_nav_common.on { color: #ff4a00; border-bottom-color: #ff4a00; }
