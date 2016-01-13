@@ -6,7 +6,7 @@
             javascript: test_item(0);
             return;
         } else if ($("input[name='DesignerSex']:checked").length <= 0) {
-            Message("请选择性别!",  true);
+            Message("请选择性别!", true);
             javascript: test_item(0);
             return;
         } else if (!checkForm("DesignerBirthdate", "", false)) {
@@ -29,15 +29,15 @@
             Message("请填写身份证号!", true);
             javascript: test_item(0);
             return;
-        } else if (!checkForm("DesignerSchoolTag", "", false)) {
-            Message("请填写毕业院校!", true);
-            javascript: test_item(0);
-            return;
-        } else if (!checkForm("DesignerEducation", "", false)) {
+        } else if ($("#DesignerEducation").val() == "0") {
             Message("请填写最高学历!", true);
             javascript: test_item(0);
             return;
-        } else if (!checkForm("DesignerWorkExperience", /^[0-9]*$/)) {
+        } else if ($("#DesignerEducation").val() != "0" && $("#DesignerEducation").val() != "高中及以下" && !checkForm("DesignerSchoolTag", "", false)) {
+            Message("请填写毕业院校!", true);
+            javascript: test_item(0);
+            return;
+        } else if (!checkForm("DesignerWorkExperience", "", false) || !checkForm("DesignerWorkExperience", /^[0-9]*$/)) {
             Message("请正确填写工作经验(年)!", true);
             javascript: test_item(0);
             return;
@@ -45,24 +45,8 @@
             Message("请选择申请职位!", true);
             javascript: test_item(0);
             return;
-        } else if (!checkForm("DesignerCurrentEmployer", "", false)) {
-            Message("请填写当前工作单位!", true);
-            javascript: test_item(0);
-            return;
-        } else if (!checkForm("DesignerCurrentPosition", "", false)) {
-            Message("请填写当前工作职位!", true);
-            javascript: test_item(0);
-            return;
-        } else if (!checkForm("DesignerAcceptableScope", "", false)) {
-            Message("请填写可接受接单范围!", true);
-            javascript: test_item(0);
-            return;
         } else if (!checkForm("DesignerMail", /^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/)) {
             Message("请填写正确的邮箱!", true);
-            javascript: test_item(0);
-            return;
-        } else if (!checkForm("DesignerMobile", /^(13[0-9]|14[0-9]|15[0-9]|18[0-9])\d{8}$/i)) {
-            Message("请填写正确的手机号码!", true);
             javascript: test_item(0);
             return;
         } else if ($("input[name='DesignFieldID']:checked").length <= 0) {
@@ -138,7 +122,7 @@
                 }
             });
             if (!temp) return;
-            
+
             if (!checkForm("DesignerEnclosure", "", false)) {
                 Message("请上传附件!", true);
                 return;
@@ -168,7 +152,7 @@
                         DesignerWorkExperience += '"DesignerCompany":"' + DesignerCompany.val() + '",';
                         DesignerWorkExperience += '"DesignerStartDate":"' + DesignerStartDate.val() + '",';
                         DesignerWorkExperience += '"DesignerEndDate":"' + DesignerEndDate.val() + '",';
-                        DesignerWorkExperience += '"DesignerSection":"' + DesignerSection.val() + '",'; 
+                        DesignerWorkExperience += '"DesignerSection":"' + DesignerSection.val() + '",';
                         DesignerWorkExperience += '"DesignerPosition":"' + DesignerPosition.val() + '",';
                         DesignerWorkExperience += '"DesignerWorkDes":"' + DesignerWorkDes.val() + '"';
                         DesignerWorkExperience += "},";
@@ -177,7 +161,7 @@
 
 
                 DesignerWorkExperience = DesignerWorkExperience.substring(0, DesignerWorkExperience.length - 1);
-                
+
 
                 var DesignerEducationExperience = "";
                 $(".linebox").each(function (i, n) {
@@ -304,6 +288,13 @@
             $("#DesignerEnclosure").val(response);
         }
     }
+    $("#DesignerEducation").change(function () {
+        var selValue = $(this).val();
+        if (selValue != "0" && selValue != "高中及以下")
+            $("#DesignerSchoolTagDiv").show();
+        else
+            $("#DesignerSchoolTagDiv").hide();
+    });
 
 });
 

@@ -294,3 +294,11 @@ input {color: #333;}
 .quotes SPAN.disabled { border:1px solid #f3f3f3;  color: #ccc; margin-right: 2px; padding: 2px 5px; }
 
 #indexlink { display: block; position: absolute; width: 260px; height: 100px; background: none;z-index: 100;}
+/**/
+@media screen and (max-width: 1240px) {
+
+    .footer{
+        width: 1240px; margin: auto;
+    }
+
+}

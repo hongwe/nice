@@ -7,9 +7,6 @@ $(function () {
         if (!checkForm("EmployerRealName", "", false)) {
             Message("请填写真实姓名!", true);
             return;
-        } else if (!checkForm("EmployerPhone", /^(13[0-9]|14[0-9]|15[0-9]|18[0-9])\d{8}$/i)) {
-            Message("请填写正确的手机号码!", true);
-            return;
         } else if (!checkForm("EmployerMailbox", /^[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)+$/)) {
             Message("请填写正确的邮箱!", true);
             return;
@@ -28,7 +25,6 @@ $(function () {
             $(this).addClass("b-color-shui");
             AjaxService.ServiceParas = {
                 EmployerRealName: $("#EmployerRealName").val(),
-                EmployerPhone: $("#EmployerPhone").val(),
                 EmployerMailbox: $("#EmployerMailbox").val(),
                 EmployerQQ: $("#EmployerQQ").val(),
                 EmployerWechat: $("#EmployerWechat").val(),

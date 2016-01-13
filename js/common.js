@@ -93,7 +93,6 @@ $(function () {
         $(".ggtit02").stop().slideToggle('fast');
     });
 
-    $(".header_left").before("<a href='#' id='indexlink'></a>");
     //$(".prnav01 li").click(function () {
     //    $(".prnav01 li").removeClass('on')
     //    $(this).addClass('on');
